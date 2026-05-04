@@ -691,7 +691,7 @@ p {
   font-family: var(--font-serif);
   font-size: 80px;
   font-weight: 300;
-  color: rgba(29,158,117,0.1);
+  color: rgba(29,158,117,0.8);
   line-height: 1;
   margin-bottom: 20px;
 }
@@ -1219,7 +1219,7 @@ p {
   font-family: var(--font-serif);
   font-size: 48px;
   font-weight: 300;
-  color: rgba(29,158,117,0.15);
+  color: rgba(29,158,117,0.8);
   line-height: 1;
   margin-bottom: 20px;
 }

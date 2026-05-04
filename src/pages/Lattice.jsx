@@ -155,7 +155,7 @@ export default function Lattice() {
                 </div>
               ))}
               <p style={{ fontSize: '12px', color: 'rgba(255,255,255,0.2)', marginTop: '16px', fontStyle: 'italic' }}>
-                * Estimates based on navigator field experience. TSE will produce data-backed metrics at launch.
+                * Figures reflect TSE's direct field experience in Georgia's CoC ecosystem. Data-sourced metrics will be published at platform launch.
               </p>
             </div>
           </div>
@@ -190,11 +190,12 @@ export default function Lattice() {
 
             <article className="lattice-feature reveal reveal-delay-2">
               <div className="lattice-feature-num" aria-hidden="true">02</div>
-              <h4>Warm handoffs</h4>
+              <h4>Connections that close</h4>
               <p>
-                Lattice enables connection with follow-through built in — not just
-                a phone number passed in a hallway. The handoff is tracked. The
-                receiving provider confirms. The referral is resolved, not just made.
+                Lattice enables provider-to-provider connection with follow-through
+                built in — not just a phone number passed in a hallway. The connection
+                is tracked. The receiving provider confirms. The referral is resolved,
+                not just made.
               </p>
             </article>
 
@@ -230,7 +231,7 @@ export default function Lattice() {
 
             <article className="lattice-feature reveal reveal-delay-4">
               <div className="lattice-feature-num" aria-hidden="true">06</div>
-              <h4>Georgia-first, built to expand</h4>
+              <h4>Georgia-first, growing with the network</h4>
               <p>
                 Lattice launches with TSE's existing network across Georgia. The model
                 is designed to expand — by geography, by service type, by population —
@@ -270,13 +271,13 @@ export default function Lattice() {
               },
               {
                 step: '3',
-                title: 'Warm handoff is initiated',
-                body: 'The navigator initiates a connection through Lattice. The receiving provider is notified. The handoff is logged and tracked.',
+                title: 'Connection is made',
+                body: 'The navigator initiates a connection through Lattice. The receiving provider is notified. The connection is logged and tracked.',
               },
               {
                 step: '4',
                 title: 'Resolution is confirmed',
-                body: 'Follow-through is built in. The platform tracks whether the referral landed. TSE monitors for stalled handoffs and moves them forward.',
+                body: 'Follow-through is built in. The platform tracks whether the referral landed. TSE monitors for unresolved connections and moves them forward.',
               },
             ].map((item, i) => (
               <div
@@ -329,12 +330,12 @@ export default function Lattice() {
               {
                 date: 'Summer 2026',
                 title: 'Founding Member Onboarding',
-                body: 'A limited cohort of founding members will be onboarded — vetted, governed, and set up with Lattice profiles ahead of the public launch.',
+                body: 'A founding cohort of up to 20 organizations will be onboarded — vetted, governed, and set up with Lattice profiles ahead of the public launch.',
               },
               {
                 date: 'Fall 2026',
                 title: 'Lattice Launch',
-                body: 'The platform goes live for TSE network members. Live availability. Warm handoffs. Governed accuracy. Built for the work.',
+                body: 'The platform goes live for TSE network members. Live availability. Trusted connections. Governed accuracy. Designed for the work.',
               },
               {
                 date: '2027 +',

@@ -118,13 +118,13 @@ export default function PartnerWithUs() {
       <section className="page-hero" style={{ minHeight: '60vh' }} aria-label="Partner with TSE">
         <div className="page-hero-content">
           <span className="eyebrow" style={{ color: 'var(--teal)' }}>
-            Partnership
+            Georgia DCA Housing Navigation NOFO — July 2026
           </span>
-          <h1>The coordination partner<br />your program needs.</h1>
+          <h1>Georgia is funding<br />housing navigation.</h1>
           <p>
-            Organizations entering or expanding housing navigation work need a qualified
-            coordination partner. TSE was built for exactly this role — and built to
-            complement what your organization is already doing.
+            Organizations receiving this funding are expected to have a qualified
+            coordination partner — not just referral systems, not just case managers.
+            TSE is that partner. Applications are due July 2026.
           </p>
         </div>
       </section>
@@ -161,8 +161,8 @@ export default function PartnerWithUs() {
                 the populations the funding is designed to reach.
               </p>
               <p style={{ fontSize: '17px', lineHeight: 1.78, marginBottom: '24px' }}>
-                TSE is that partner. Built on a legacy navigation program model, with the
-                systems, the relationships, and the documented approach to make your
+                TSE is that partner. Grounded in a legacy navigation program model, with the
+                relationships, documented approach, and coordination capacity to make your
                 housing navigation work perform — not just comply.
               </p>
               <p style={{ fontSize: '17px', lineHeight: 1.78 }}>
@@ -179,7 +179,7 @@ export default function PartnerWithUs() {
               </span>
               {[
                 'A qualified housing navigation partner with documented capacity',
-                'Coordination infrastructure that complements existing staff — not adds headcount',
+                'Coordination capacity that complements existing staff — without adding headcount',
                 'Outcome reporting alignment across program deliverables',
                 'A partner who understands the populations the funding is designed to reach',
                 'Relationship-based navigation built on real proximity to the work',
@@ -223,7 +223,7 @@ export default function PartnerWithUs() {
             <p>
               TSE provides contracted navigation capacity so your organization can fulfill
               its program requirements without a full W-2 hire — with the coordination
-              infrastructure, the documentation, and the follow-through already built in.
+              model, the documentation, and the follow-through already in place.
             </p>
           </div>
 
@@ -246,7 +246,7 @@ export default function PartnerWithUs() {
             <p className="package-includes-label">What's included</p>
             <ul className="package-list" role="list">
               <li className="package-item">
-                Referral coordination and tracking — from initial handoff through resolution
+                Referral coordination and tracking — from first contact through resolution
               </li>
               <li className="package-item">
                 Client housing navigation support for complex, multi-barrier cases
@@ -289,6 +289,7 @@ export default function PartnerWithUs() {
 
           <div ref={enrichRef} className="enrichment-grid">
             <article className="enrichment-card reveal">
+              <div className="eyebrow" style={{ fontSize: '11px', marginBottom: '10px', color: 'var(--teal)' }}>Access</div>
               <h4>Staff Training</h4>
               <p>
                 Coordination as a practice — not a policy. Training for case managers,
@@ -296,6 +297,7 @@ export default function PartnerWithUs() {
               </p>
             </article>
             <article className="enrichment-card reveal reveal-delay-1">
+              <div className="eyebrow" style={{ fontSize: '11px', marginBottom: '10px', color: 'var(--teal)' }}>Visibility</div>
               <h4>Cohort Facilitation</h4>
               <p>
                 Structured peer learning for housing navigators and service providers.
@@ -304,13 +306,15 @@ export default function PartnerWithUs() {
               </p>
             </article>
             <article className="enrichment-card reveal reveal-delay-2">
+              <div className="eyebrow" style={{ fontSize: '11px', marginBottom: '10px', color: 'var(--teal)' }}>Resolution</div>
               <h4>Workflow Consulting</h4>
               <p>
                 TSE reviews your organization's coordination workflow and identifies
-                where handoffs break down, where follow-through falls off, and how to close it.
+                where referrals break down, where follow-through falls off, and how to close it.
               </p>
             </article>
             <article className="enrichment-card reveal reveal-delay-3">
+              <div className="eyebrow" style={{ fontSize: '11px', marginBottom: '10px', color: 'var(--teal)' }}>Visibility</div>
               <h4>Community Convenings</h4>
               <p>
                 Facilitated Roundtables for your team, your CoC partners, or your
@@ -318,6 +322,7 @@ export default function PartnerWithUs() {
               </p>
             </article>
             <article className="enrichment-card reveal reveal-delay-4">
+              <div className="eyebrow" style={{ fontSize: '11px', marginBottom: '10px', color: 'var(--teal)' }}>Access</div>
               <h4>NOFO Strategy Support</h4>
               <p>
                 For organizations navigating the Housing Navigation funding opportunity —
@@ -327,6 +332,7 @@ export default function PartnerWithUs() {
               </p>
             </article>
             <article className="enrichment-card reveal reveal-delay-5">
+              <div className="eyebrow" style={{ fontSize: '11px', marginBottom: '10px', color: 'var(--teal)' }}>Visibility</div>
               <h4>Navigation Capacity Assessment</h4>
               <p>
                 A structured review of your organization's current navigation capacity —
@@ -359,7 +365,7 @@ export default function PartnerWithUs() {
               </p>
             </article>
             <article className="why-item reveal reveal-delay-2">
-              <h4>Infrastructure, not overhead</h4>
+              <h4>A partner, not overhead</h4>
               <p>
                 TSE is not a W-2 employee. It is a coordination partner that brings
                 its own model, its own documentation systems, and its own follow-through
@@ -422,18 +428,8 @@ export default function PartnerWithUs() {
               whether TSE belongs in it.
             </p>
 
-            {/* REPLACE: Embed actual Calendly widget or update link below */}
-            <div className="calendly-embed">
-              <p style={{ marginBottom: '8px', fontFamily: 'var(--font-serif)', fontSize: '18px', color: 'rgba(255,255,255,0.45)' }}>
-                Calendly embed goes here
-              </p>
-              <p style={{ fontSize: '13px', color: 'rgba(255,255,255,0.25)' }}>
-                Replace this block with: &lt;div className="calendly-inline-widget" data-url="YOUR_CALENDLY_URL" /&gt;
-              </p>
-            </div>
-
-            <a href="https://bit.ly/bookseedx" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
-              Book a Call
+            <a href="https://bit.ly/bookseedx" className="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
+              Book a Discovery Call
             </a>
           </div>
         </div>

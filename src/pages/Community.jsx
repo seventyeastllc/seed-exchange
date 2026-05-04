@@ -26,7 +26,7 @@ export default function Community() {
             case managers, housing navigators, and community partners. This is not a
             broadcast channel. It is a working space — where providers come to share
             resources, work through system challenges together, and build the relationships
-            that make warm handoffs possible before a referral is ever needed.
+            that make direct, trusted connections possible before a referral is ever needed.
           </p>
 
           <div className="community-features">
@@ -39,8 +39,8 @@ export default function Community() {
               knows about yet but should
             </div>
             <div className="community-feature">
-              System-level case complexity discussion — not individual clients, but
-              the structural patterns that keep showing up
+              Case complexity discussion at the structural level — not individual clients, but
+              the coordination patterns that keep surfacing across providers
             </div>
             <div className="community-feature">
               The kind of honest provider conversation that only happens when people
@@ -218,7 +218,7 @@ export default function Community() {
             <p style={{ fontSize: '17px', lineHeight: 1.78, marginBottom: '22px' }}>
               Topics come from the community — what referral flows are breaking down,
               which CoC pathways are moving and which aren't, what's changed with
-              eligibility windows, where complex households keep getting stuck.
+              eligibility windows, where complex households keep hitting barriers.
               The goal is not to report on the problem. It is to solve it, together,
               in real time, with the people who are closest to it.
             </p>

@@ -35,12 +35,12 @@ export default function HowWeWork() {
           <h3>Your services. Extended further.</h3>
           <p style={{ color: 'rgba(255,255,255,0.65)', marginBottom: '8px', fontSize: '16px', lineHeight: 1.75 }}>
             TSE partners with your organization to strengthen the coordination layer —
-            so your services reach the people they were built for, and complex cases
+            so your services reach the people they were designed to serve, and complex cases
             don't fall apart between departments, agencies, or intake windows.
           </p>
 
           <ul className="audience-list" role="list">
-            <li>Referral coordination and tracking — from initial handoff through resolution</li>
+            <li>Referral coordination and tracking — from first contact through resolution</li>
             <li>Case conferencing support on complex, multi-system cases</li>
             <li>System visibility into why cases stall — and what it takes to move them forward</li>
             <li>Outcome reporting alignment so your data tells the right story</li>
@@ -65,23 +65,23 @@ export default function HowWeWork() {
         {/* Community side */}
         <div className="audience-pane audience-pane--community">
           <span className="eyebrow">For individuals &amp; families</span>
-          <h3>You don't have to figure this out alone.</h3>
+          <h3>You already know what you need. TSE helps you get there.</h3>
           <p style={{ color: 'var(--body)', marginBottom: '8px', fontSize: '16px', lineHeight: 1.75 }}>
-            If you are navigating housing crisis — or if you've been navigating it for
-            a while without finding solid ground — TSE connects people to the support
-            they qualify for, including programs and benefits they may not know exist.
+            If you are navigating housing instability — or if you've been navigating it
+            for a while without finding solid ground — TSE connects people to support
+            they qualify for, including programs and resources they may not know exist.
           </p>
 
           <ul className="audience-list" role="list">
             <li>Connection to housing programs, benefits, and services you may qualify for</li>
-            <li>Navigation through systems that can feel designed to confuse, not clarify</li>
-            <li>Follow-through — someone who stays on the case until something moves</li>
-            <li>Community through The Bridge — people who have been here and found their way</li>
+            <li>Someone who follows through — not just a referral, but an actual next step</li>
+            <li>Navigation through processes that are easier with someone who knows the path</li>
+            <li>Community through The Bridge — people who have walked this road and want to share what they know</li>
           </ul>
 
           <p style={{ color: 'var(--body)', opacity: 0.65, fontSize: '15px', fontStyle: 'italic', lineHeight: 1.7, marginTop: '8px' }}>
             The Bridge is not a hotline. It is not an intake form. It is a community
-            — people who have walked this road and want to light the way for someone else.
+            — people who have been here, found their way through, and want to light the path for someone else.
           </p>
 
           <div style={{ marginTop: '40px', display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
@@ -143,7 +143,7 @@ export default function HowWeWork() {
               <h4 className="step-label">Lattice Access</h4>
               <p className="step-desc">
                 TSE network members gain access to Lattice (fall 2026) — Georgia's
-                governed resource directory for warm handoffs and live availability.
+                governed resource directory for trusted connections and live availability.
               </p>
             </div>
           </div>
@@ -172,7 +172,7 @@ export default function HowWeWork() {
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2px' }}>
               {[
                 {
-                  isNot: 'A referral agency that sends handoffs and closes the case',
+                  isNot: 'A referral agency that sends referrals and closes the case',
                   is: 'A coordination partner that stays with the case until something actually resolves',
                 },
                 {
@@ -243,8 +243,8 @@ export default function HowWeWork() {
               </p>
               <p style={{ fontSize: '17px', lineHeight: 1.78, marginBottom: '36px' }}>
                 Lattice is TSE's answer to that: a curated, governed resource directory
-                for TSE network members. Live availability. Warm handoffs with follow-through
-                built in. No PHI. Membership-based. Intentionally small at launch.
+                for TSE network members. Live availability. Trusted connections with
+                follow-through built in. No PHI. Membership-based. Intentionally small at launch.
               </p>
               <Link to="/lattice" className="btn btn-primary">
                 Get Early Access

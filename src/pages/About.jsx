@@ -180,7 +180,7 @@ export default function About() {
             </p>
             <p style={{ color: '#2D2D2D', fontSize: '18px', lineHeight: 1.78, marginBottom: '28px' }}>
               The work is relational. It is followed through. It is sustained past the
-              point where most handoffs stop. And it is built on a belief that the people
+              point where most referrals end. And it is grounded in a belief that the people
               who have been most failed by the system deserve the most careful, deliberate
               coordination — not the least.
             </p>
@@ -212,8 +212,8 @@ export default function About() {
               they serve. When a referral gets made and goes nowhere, TSE finds out why
               and moves it forward. When a complex case involves three agencies and nobody
               is taking point, TSE takes point. When a family qualifies for a program
-              they've never heard of, TSE makes sure they hear about it — and that
-              someone walks them through the door.
+              they've never heard of, TSE makes sure they hear about it — and stays with
+              them until the door actually opens.
             </p>
             <p style={{ fontSize: '17px', lineHeight: 1.8, marginBottom: '22px' }}>
               TSE does not duplicate what providers do. It closes the gap between what
@@ -223,8 +223,8 @@ export default function About() {
             </p>
             <p style={{ fontSize: '17px', lineHeight: 1.8 }}>
               The result is an ecosystem where providers can do their work at a higher
-              level, where complex cases actually move, and where people who have been
-              cycling through systems without stabilizing start finding their way through.
+              level, where complex cases actually move, and where people who have moved
+              through multiple systems without finding solid ground start finding their way through.
             </p>
           </div>
 
@@ -343,7 +343,7 @@ export default function About() {
               <p className="value-body">
                 A referral is the beginning of coordination, not the end of it.
                 TSE measures success by what actually happens for the person on the
-                other side of the handoff — not by what got sent. Follow-through is
+                other side of the referral — not by what got sent. Follow-through is
                 not optional. It is the work.
               </p>
             </article>

@@ -73,7 +73,7 @@ export default function Roundtables() {
           <div ref={whatRef} className="rt-what reveal">
             <div className="rt-what-text">
               <span className="eyebrow">The format</span>
-              <h2 style={{ marginBottom: '28px' }}>Built for the people doing the work.</h2>
+              <h2 style={{ marginBottom: '28px' }}>For the people doing the work.</h2>
 
               <p>
                 TSE Roundtables are structured, facilitated conversations for community
@@ -84,7 +84,7 @@ export default function Roundtables() {
               </p>
 
               <p>
-                Topics rotate based on what's actually moving in the system — referral flow
+                Topics rotate based on what's actually moving in Georgia's housing ecosystem — referral flow
                 breakdowns, CoC navigation, complex household coordination, data quality,
                 NOFO implementation, and more. If it shows up in your work week, it's fair
                 game for a Roundtable.
@@ -101,8 +101,7 @@ export default function Roundtables() {
                 <Link to="/contact" className="btn btn-primary">
                   Book a Call About Roundtables
                 </Link>
-                {/* REPLACE #: Update with actual Community Garden Facebook Group URL */}
-                <a href="#" className="btn btn-outline-dark" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.facebook.com/share/g/17aSVDX53z/" className="btn btn-outline-dark" target="_blank" rel="noopener noreferrer">
                   Join the Community Garden
                 </a>
               </div>
@@ -112,7 +111,7 @@ export default function Roundtables() {
               <h4>Topics we've covered</h4>
               <div className="topic-list">
                 {[
-                  'Referral flow breakdowns — why handoffs fail between agencies',
+                  'Referral flow breakdowns — why connections fail between agencies',
                   'CoC navigation for providers new to Coordinated Entry',
                   'Complex household coordination across multiple systems',
                   'Data quality in housing navigation: what the numbers miss',
@@ -151,8 +150,7 @@ export default function Roundtables() {
                   Join the Community Garden to be first to know.
                 </p>
                 <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap' }}>
-                  {/* REPLACE #: Update with actual Community Garden Facebook Group URL */}
-                  <a href="#" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.facebook.com/share/g/17aSVDX53z/" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
                     Join the Community Garden
                   </a>
                   <Link to="/contact" className="btn btn-outline-dark">
@@ -263,7 +261,7 @@ export default function Roundtables() {
                 'Provider coalitions working through referral flow breakdowns',
                 'CoC partner groups preparing for NOFO implementation',
                 'Organizations building coordination capacity for the first time',
-                'Staff teams experiencing friction in handoff and follow-through',
+                'Staff teams experiencing friction in referral follow-through',
                 'Funded programs that need structured provider engagement built in',
               ].map((item, i) => (
                 <div

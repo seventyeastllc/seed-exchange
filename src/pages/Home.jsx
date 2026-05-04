@@ -155,7 +155,7 @@ export default function Home() {
               <p>
                 A governed space for service providers, case managers, housing navigators,
                 and community partners. This is where the relationships that make warm
-                handoffs possible get built — before the referral is ever needed.
+                trusted connections get built — before the referral is ever needed.
                 TSE hosts virtual Garden Meetings here.
               </p>
               <a href="https://www.facebook.com/share/g/17aSVDX53z/" className="btn btn-outline-teal" target="_blank" rel="noopener noreferrer">
@@ -183,7 +183,7 @@ export default function Home() {
               <h3>Lattice</h3>
               <p>
                 TSE's Partner Management Platform — a curated, governed resource directory
-                for TSE network members across Georgia. Live availability. Warm handoffs
+                for TSE network members across Georgia. Live availability. Trusted connections
                 built in. No PHI. Membership-based.
               </p>
               <Link to="/lattice" className="btn btn-outline-teal">

@@ -117,37 +117,15 @@ export default function Contact() {
                 TSE belongs in what you're building — or can help you find your way through.
               </p>
 
-              {/* Calendly embed placeholder */}
-              <div style={{
-                background: '#1A2E4A',
-                padding: '40px',
-                marginBottom: '32px',
-              }}>
-                {/* REPLACE: Embed actual Calendly widget here */}
-                {/* Example: <div className="calendly-inline-widget" data-url="https://calendly.com/YOUR_LINK" style={{ minWidth: '320px', height: '630px' }} /> */}
-                <p style={{
-                  color: 'rgba(255,255,255,0.35)',
-                  fontSize: '14px',
-                  textAlign: 'center',
-                  fontFamily: 'var(--font-serif)',
-                  fontSize: '18px',
-                  marginBottom: '16px',
-                }}>
-                  Calendar booking
-                </p>
-                <p style={{ color: 'rgba(255,255,255,0.2)', fontSize: '13px', textAlign: 'center', marginBottom: '24px' }}>
-                  Embed your Calendly link here
-                </p>
-                <a
-                  href="https://bit.ly/bookseedx"
-                  className="btn btn-primary"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ width: '100%' }}
-                >
-                  Book a Call
-                </a>
-              </div>
+              <a
+                href="https://bit.ly/bookseedx"
+                className="btn btn-primary btn-lg"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ width: '100%', marginBottom: '32px', display: 'block', textAlign: 'center' }}
+              >
+                Book a Call with Ravonda
+              </a>
 
               {/* Community links */}
               <div className="contact-links">

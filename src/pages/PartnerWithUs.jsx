@@ -430,7 +430,7 @@ export default function PartnerWithUs() {
 
             <div style={{ width: '100%', overflowX: 'auto', marginTop: '8px' }}>
               <iframe
-                src="https://calendar.google.com/calendar/embed?src=c_7172e1da7e3901987cd06b8a6e5ba0600b679d68ca86d1c77f87ed7d1447679e%40group.calendar.google.com&ctz=America%2FNew_York"
+                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2-4C6xEt-YhS1PATf-O9fi0BP6jr2oHdJKLHMxNa2JhMLkK2oTZGXuquBVkXxiIZyeDEicNtCY?gv=true"
                 style={{ border: 0, width: '100%', minHeight: '600px' }}
                 frameBorder="0"
                 title="Book a discovery call with Ravonda"

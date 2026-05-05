@@ -428,9 +428,14 @@ export default function PartnerWithUs() {
               whether TSE belongs in it.
             </p>
 
-            <a href="https://bit.ly/bookseedx" className="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
-              Book a Discovery Call
-            </a>
+            <div style={{ width: '100%', overflowX: 'auto', marginTop: '8px' }}>
+              <iframe
+                src="https://calendar.google.com/calendar/embed?src=c_7172e1da7e3901987cd06b8a6e5ba0600b679d68ca86d1c77f87ed7d1447679e%40group.calendar.google.com&ctz=America%2FNew_York"
+                style={{ border: 0, width: '100%', minHeight: '600px' }}
+                frameBorder="0"
+                title="Book a discovery call with Ravonda"
+              />
+            </div>
           </div>
         </div>
       </section>

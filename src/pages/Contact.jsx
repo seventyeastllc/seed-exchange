@@ -117,15 +117,14 @@ export default function Contact() {
                 TSE belongs in what you're building — or can help you find your way through.
               </p>
 
-              <a
-                href="https://bit.ly/bookseedx"
-                className="btn btn-primary btn-lg"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ width: '100%', marginBottom: '32px', display: 'block', textAlign: 'center' }}
-              >
-                Book a Call with Ravonda
-              </a>
+              <div style={{ width: '100%', overflowX: 'auto', marginBottom: '32px' }}>
+                <iframe
+                  src="https://calendar.google.com/calendar/embed?src=c_7172e1da7e3901987cd06b8a6e5ba0600b679d68ca86d1c77f87ed7d1447679e%40group.calendar.google.com&ctz=America%2FNew_York"
+                  style={{ border: 0, width: '100%', minHeight: '600px' }}
+                  frameBorder="0"
+                  title="Book a discovery call with Ravonda"
+                />
+              </div>
 
               {/* Community links */}
               <div className="contact-links">

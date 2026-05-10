@@ -8,7 +8,7 @@ const NAV_LINKS = [
   { to: '/partner', label: 'Partner With Us' },
   { to: '/community', label: 'Community' },
   { to: '/lattice', label: 'Lattice' },
-  { to: '/roundtables', label: 'Roundtables' },
+  { to: '/roundtables', label: 'The Field Table' },
 ]
 
 export default function Navigation() {

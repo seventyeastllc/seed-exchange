@@ -25,7 +25,7 @@ function InquiryForm() {
           Thank you for reaching out.
         </h4>
         <p>
-          Ravonda will be in touch within 2–3 business days to schedule a discovery call.
+          Someone from TSE will be in touch within 2–3 business days to schedule a discovery call.
           If you'd prefer to move faster, you can book directly on the calendar above.
         </p>
       </div>
@@ -238,7 +238,7 @@ export default function PartnerWithUs() {
                 <p className="package-sub">
                   Built on TSE's legacy program model. Purpose-built for organizations
                   entering or expanding housing navigation work. TSE is a coordination partner —
-                  not an employee, not a vendor. Infrastructure, not overhead.
+                  not an employee, not a vendor. Capacity that's already built, already working.
                 </p>
               </div>
             </div>
@@ -255,7 +255,7 @@ export default function PartnerWithUs() {
                 Internal case conferencing support — TSE participates, facilitates, or both
               </li>
               <li className="package-item">
-                System visibility and documentation — barriers, stalled cases, eligibility gaps
+                System visibility and documentation — barriers, paused cases, eligibility complexity
               </li>
               <li className="package-item">
                 Outcome reporting alignment so your data reflects what's actually happening
@@ -266,6 +266,44 @@ export default function PartnerWithUs() {
               Capacity is governed. TSE takes on a limited number of formal partnerships
               to ensure quality of coordination. Reach out early.
             </p>
+          </div>
+
+          {/* Entry-level pilot tier */}
+          <div style={{
+            marginTop: '32px',
+            background: 'var(--light-bg)',
+            border: '1px solid rgba(42,175,169,0.25)',
+            padding: '40px 48px',
+            display: 'grid',
+            gridTemplateColumns: '1fr 1fr',
+            gap: '48px',
+            alignItems: 'center',
+          }}>
+            <div>
+              <span className="eyebrow" style={{ color: 'var(--teal)', marginBottom: '12px' }}>
+                Entry point · Limited availability
+              </span>
+              <h3 style={{ fontFamily: 'var(--font-serif)', fontWeight: 400, marginBottom: '16px', color: 'var(--dark)' }}>
+                60-Day Coordination Pilot
+              </h3>
+              <p style={{ fontSize: '16px', lineHeight: 1.78, color: 'var(--body)', marginBottom: '0' }}>
+                Not ready to commit to a full partnership? The 60-Day Pilot is a
+                lower-commitment entry point — the same coordination model, the same
+                follow-through, scoped for two months. It is how some organizations
+                get started before formalizing. Slots are limited.
+              </p>
+            </div>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ fontFamily: 'var(--font-serif)', fontSize: '48px', fontWeight: 300, color: 'var(--dark)', lineHeight: 1 }}>
+                $897
+              </div>
+              <div style={{ fontSize: '14px', color: 'var(--body)', opacity: 0.65, marginBottom: '28px', marginTop: '6px' }}>
+                per month · 60-day commitment
+              </div>
+              <a href="/contact" className="btn btn-outline-teal">
+                Ask About Availability →
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -310,7 +348,7 @@ export default function PartnerWithUs() {
               <h4>Workflow Consulting</h4>
               <p>
                 TSE reviews your organization's coordination workflow and identifies
-                where referrals break down, where follow-through falls off, and how to close it.
+                where referrals break down, where follow-through falls off, and what restoring it requires.
               </p>
             </article>
             <article className="enrichment-card reveal reveal-delay-3">
@@ -336,8 +374,8 @@ export default function PartnerWithUs() {
               <h4>Navigation Capacity Assessment</h4>
               <p>
                 A structured review of your organization's current navigation capacity —
-                where you are strong, where the gaps are, and what partnership would
-                realistically close them.
+                where you are strong, where the pauses are, and what partnership would
+                realistically move things forward.
               </p>
             </article>
           </div>
@@ -359,9 +397,10 @@ export default function PartnerWithUs() {
               <h4>Lived expertise, not just credentialed expertise</h4>
               <p>
                 TSE brings proximity — to the populations, to the system, and to the
-                space between them. Ravonda has navigated these systems from
-                the inside. That is not a talking point. It is the foundation of how
-                TSE operates.
+                space between them. This team has navigated these systems from the inside:
+                as case managers, as Coordinated Entry specialists, as the person still
+                working the case after everyone else moved on. That is not a talking point.
+                It is the foundation of how TSE operates.
               </p>
             </article>
             <article className="why-item reveal reveal-delay-2">
@@ -369,7 +408,7 @@ export default function PartnerWithUs() {
               <p>
                 TSE is not a W-2 employee. It is a coordination partner that brings
                 its own model, its own documentation systems, and its own follow-through
-                practices. You get capacity without adding headcount.
+                practices. You get real capacity without adding headcount.
               </p>
             </article>
             <article className="why-item reveal reveal-delay-4">
@@ -377,7 +416,7 @@ export default function PartnerWithUs() {
               <p>
                 TSE's model is built to extend what your organization already does —
                 not to build something that competes with it. Every partnership is
-                designed around what you're doing and what the gap actually is.
+                designed around what you're doing and what forward movement actually requires.
               </p>
             </article>
           </div>
@@ -394,19 +433,18 @@ export default function PartnerWithUs() {
               <span className="eyebrow">Documentation</span>
               <h3>TSE Capability Statement</h3>
               <p>
-                Download TSE's capability statement for grant applications, program documentation,
-                or internal review. Includes organizational overview, service model, and
-                partnership scope.
+                TSE's capability statement is available for grant applications, program
+                documentation, and internal review. Includes organizational overview,
+                service model, and partnership scope. Request a copy directly.
               </p>
             </div>
-            {/* REPLACE: Upload TSE-Capability-Statement.pdf to /public and update href */}
+            {/* TODO: Upload completed TSE-Capability-Statement.pdf to /public to enable download */}
             <a
-              href="/TSE-Capability-Statement.pdf"
+              href="/contact"
               className="btn btn-primary btn-lg"
-              download
-              aria-label="Download TSE Capability Statement PDF"
+              aria-label="Request TSE Capability Statement"
             >
-              Download Capability Statement (PDF)
+              Request Capability Statement
             </a>
           </div>
         </div>
@@ -421,9 +459,9 @@ export default function PartnerWithUs() {
             <span className="eyebrow" style={{ color: 'rgba(255,255,255,0.35)' }}>
               30 minutes. No pitch.
             </span>
-            <h3>Book a discovery call with Ravonda.</h3>
+            <h3>Book a discovery call.</h3>
             <p className="sub">
-              Not sure if this is the right fit? Book a 30-minute discovery call.
+              Not sure if this is the right fit? Start with a 30-minute discovery call.
               No pitch. Just a real conversation about what you're building and
               whether TSE belongs in it.
             </p>
@@ -433,7 +471,7 @@ export default function PartnerWithUs() {
                 src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3TyleaNRyAFgI-gYzCoRvJjeknpgzzYj0Yfu6wqwE9gJsjQRN5tx-eWyoU5JkoEHSb3TI0fDd5?gv=true"
                 style={{ border: 0, width: '100%', minHeight: '600px' }}
                 frameBorder="0"
-                title="Book a discovery call with Ravonda"
+                title="Book a discovery call with TSE"
               />
             </div>
           </div>
@@ -449,7 +487,7 @@ export default function PartnerWithUs() {
             <span className="eyebrow">Tell us about your organization</span>
             <h2 style={{ marginBottom: '12px' }}>Partnership inquiry.</h2>
             <p style={{ marginBottom: '48px', maxWidth: '560px', fontSize: '16px', lineHeight: 1.75 }}>
-              Fill out the form below and Ravonda will reach out within 2–3 business days
+              Fill out the form below and TSE will follow up within 2–3 business days
               to schedule a discovery call. The more context you share, the better the
               conversation will be.
             </p>

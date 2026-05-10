@@ -51,12 +51,12 @@ export default function Roundtables() {
       {/* ============================================================
           HERO
       ============================================================ */}
-      <section className="page-hero" aria-label="Roundtables">
+      <section className="page-hero" aria-label="The Field Table">
         <div className="page-hero-content">
           <span className="eyebrow" style={{ color: 'rgba(255,255,255,0.35)' }}>
-            TSE Roundtables
+            The Field Table
           </span>
-          <h1>What do you bring<br />to the table?</h1>
+          <h1>What can you bring<br />to the table?</h1>
           <p>
             Not a webinar. Not a training. Not a pitch.
             A structured, facilitated conversation for community service providers
@@ -68,7 +68,7 @@ export default function Roundtables() {
       {/* ============================================================
           WHAT A ROUNDTABLE IS
       ============================================================ */}
-      <section className="section" aria-label="What a Roundtable is">
+      <section className="section" aria-label="What The Field Table is">
         <div className="container">
           <div ref={whatRef} className="rt-what reveal">
             <div className="rt-what-text">
@@ -76,22 +76,22 @@ export default function Roundtables() {
               <h2 style={{ marginBottom: '28px' }}>For the people doing the work.</h2>
 
               <p>
-                TSE Roundtables are structured, facilitated conversations for community
-                service providers — case managers, program directors, housing navigators,
-                CoC staff, and the people closest to the coordination failures that keep
-                showing up. The conversations are focused. The facilitator keeps them honest.
+                The Field Table is TSE's ongoing forum for community service providers —
+                case managers, program directors, housing navigators, CoC staff, and
+                the people closest to the coordination failures that keep surfacing.
+                The conversations are focused. The facilitator keeps them honest.
                 The goal is not consensus — it is clarity.
               </p>
 
               <p>
-                Topics rotate based on what's actually moving in Georgia's housing ecosystem — referral flow
+                This is evergreen content. Topics come from the field — referral flow
                 breakdowns, CoC navigation, complex household coordination, data quality,
-                NOFO implementation, and more. If it shows up in your work week, it's fair
-                game for a Roundtable.
+                NOFO implementation, and more. If it shows up in your work week,
+                it belongs at The Field Table.
               </p>
 
               <p>
-                Roundtables are designed for the kind of honest provider conversation
+                The Field Table is designed for the kind of honest provider conversation
                 that only happens when people feel like they're among colleagues —
                 not being evaluated, not performing for a funder, not pitching their
                 program. Just talking about what's real.
@@ -99,7 +99,7 @@ export default function Roundtables() {
 
               <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', marginTop: '36px' }}>
                 <Link to="/contact" className="btn btn-primary">
-                  Book a Call About Roundtables
+                  Reach Out About The Field Table
                 </Link>
                 <a href="https://www.facebook.com/share/g/17aSVDX53z/" className="btn btn-outline-dark" target="_blank" rel="noopener noreferrer">
                   Join the Community Garden
@@ -131,30 +131,30 @@ export default function Roundtables() {
       {/* ============================================================
           UPCOMING EVENTS
       ============================================================ */}
-      <section className="section section--light" aria-label="Upcoming Roundtables">
+      <section className="section section--light" aria-label="Upcoming Field Table sessions">
         <div className="container">
           <div className="section-header">
             <span className="eyebrow">Upcoming</span>
-            <h2>Roundtables on the calendar.</h2>
+            <h2>The Field Table — what's coming.</h2>
             <p>
-              Register for upcoming Roundtables below. All events are free for
-              Community Garden members and TSE network partners.
+              Sessions are free for Community Garden members and TSE network partners.
+              Sign up to be notified when new dates are posted.
             </p>
           </div>
 
           <div ref={eventsRef} className="events-grid">
             {UPCOMING_EVENTS.length === 0 ? (
               <div className="events-empty">
-                <h4>No roundtables on the calendar right now — but they move fast when they're announced.</h4>
+                <h4>No sessions on the calendar right now — but dates get posted fast when they do.</h4>
                 <p style={{ marginBottom: '32px' }}>
-                  Join the Community Garden to be first to know.
+                  Join the Community Garden or send us your email to be first to know.
                 </p>
                 <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap' }}>
                   <a href="https://www.facebook.com/share/g/17aSVDX53z/" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
                     Join the Community Garden
                   </a>
                   <Link to="/contact" className="btn btn-outline-dark">
-                    Get Notified
+                    Notify Me
                   </Link>
                 </div>
               </div>
@@ -202,13 +202,14 @@ export default function Roundtables() {
           PAST ROUNDTABLES
       ============================================================ */}
       {PAST_EVENTS.length > 0 && (
-        <section className="section" aria-label="Past Roundtables">
+        <section className="section" aria-label="Past Field Table sessions">
           <div className="container">
             <div className="section-header">
               <span className="eyebrow">Archive</span>
-              <h2>Past Roundtables.</h2>
+              <h2>The Field Table — sessions on record.</h2>
               <p>
-                A record of what the community has worked through together.
+                A running record of what the community has worked through together.
+                The conversation keeps going.
               </p>
             </div>
 
@@ -228,7 +229,7 @@ export default function Roundtables() {
       {/* ============================================================
           HOST A ROUNDTABLE CTA
       ============================================================ */}
-      <section className="section section--dark" aria-label="Host a Roundtable">
+      <section className="section section--dark" aria-label="Bring The Field Table to your team">
         <div className="container">
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center' }}>
             <div>
@@ -236,11 +237,11 @@ export default function Roundtables() {
                 Custom facilitation
               </span>
               <h2 style={{ color: 'var(--white)', marginBottom: '24px' }}>
-                Want TSE to facilitate a Roundtable for your team?
+                Bring The Field Table to your team.
               </h2>
               <p style={{ color: 'rgba(255,255,255,0.65)', fontSize: '17px', lineHeight: 1.78, marginBottom: '24px' }}>
-                TSE facilitates custom Roundtables for individual organizations, CoC
-                bodies, provider coalitions, and network partners — structured around
+                TSE facilitates custom Field Table sessions for individual organizations,
+                CoC bodies, provider coalitions, and network partners — structured around
                 the specific coordination challenges your team is facing.
               </p>
               <p style={{ color: 'rgba(255,255,255,0.65)', fontSize: '17px', lineHeight: 1.78, marginBottom: '36px' }}>
@@ -255,14 +256,14 @@ export default function Roundtables() {
 
             <div style={{ background: 'rgba(255,255,255,0.03)', padding: '56px 48px', border: '1px solid rgba(255,255,255,0.06)' }}>
               <span className="eyebrow" style={{ color: 'rgba(255,255,255,0.35)' }}>
-                Custom roundtables are right for
+                The Field Table is right for your team when
               </span>
               {[
-                'Provider coalitions working through referral flow breakdowns',
-                'CoC partner groups preparing for NOFO implementation',
-                'Organizations building coordination capacity for the first time',
-                'Staff teams experiencing friction in referral follow-through',
-                'Funded programs that need structured provider engagement built in',
+                'Your provider coalition needs to work through referral flow honestly',
+                'Your CoC partner group is preparing for NOFO implementation',
+                'Your organization is building coordination capacity for the first time',
+                'Your staff team is experiencing friction in referral follow-through',
+                'Your funded program needs structured provider engagement built in',
               ].map((item, i) => (
                 <div
                   key={i}

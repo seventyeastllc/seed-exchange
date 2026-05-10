@@ -8,57 +8,26 @@ export default function Community() {
   return (
     <main>
       {/* ============================================================
-          HERO SPLIT — Community Garden + The Bridge side by side
+          COMMUNITY GARDEN — full width
       ============================================================ */}
-      <div className="community-hero-split" role="main" aria-label="Community spaces">
-        {/* === COMMUNITY GARDEN === */}
-        <section ref={gardenRef} className="community-pane community-pane--garden reveal" aria-label="Community Garden">
-          <span className="eyebrow" style={{ color: 'rgba(255,255,255,0.3)' }}>
-            For service providers
-          </span>
-          <h2>Community Garden</h2>
-          <p className="community-sub">
-            "For providers who believe coordination is a discipline — not an afterthought."
-          </p>
-
-          <p className="community-desc">
-            The Community Garden is TSE's governed Facebook Group for service providers,
-            case managers, housing navigators, and community partners. This is not a
-            broadcast channel. It is a working space — where providers come to share
-            resources, work through system challenges together, and build the relationships
-            that make direct, trusted connections possible before a referral is ever needed.
-          </p>
-
-          <div className="community-features">
-            <div className="community-feature">
-              Virtual Garden Meetings hosted by TSE — structured conversations about
-              what's moving and what's stuck in the system
-            </div>
-            <div className="community-feature">
-              Resource sharing threads: what's available, what's changed, what nobody
-              knows about yet but should
-            </div>
-            <div className="community-feature">
-              Case complexity discussion at the structural level — not individual clients, but
-              the coordination patterns that keep surfacing across providers
-            </div>
-            <div className="community-feature">
-              The kind of honest provider conversation that only happens when people
-              feel like they're among colleagues, not at a conference
-            </div>
-            <div className="community-feature">
-              A governed space — participation is intentional, not passive. TSE hosts
-              and maintains the quality of the room.
-            </div>
-          </div>
-
-          <div>
-            <p style={{
-              fontSize: '14px',
-              color: 'rgba(255,255,255,0.4)',
-              marginBottom: '20px',
-              fontStyle: 'italic',
-            }}>
+      <section ref={gardenRef} className="community-full community-full--garden reveal" aria-label="Community Garden">
+        <div className="community-full-inner">
+          <div className="community-full-text">
+            <span className="eyebrow" style={{ color: 'rgba(255,255,255,0.4)' }}>
+              For service providers
+            </span>
+            <h2>Community Garden</h2>
+            <p className="community-sub">
+              For providers who believe coordination is a discipline — not an afterthought.
+            </p>
+            <p className="community-desc">
+              The Community Garden is TSE's governed Facebook Group for service providers,
+              case managers, housing navigators, and community partners. This is not a
+              broadcast channel. It is a working space — where providers come to share
+              resources, work through real challenges together, and build the relationships
+              that make direct, trusted connections possible before a referral is ever needed.
+            </p>
+            <p style={{ fontSize: '14px', color: 'rgba(255,255,255,0.45)', marginBottom: '28px', fontStyle: 'italic' }}>
               Who belongs: anyone doing housing-related service work in Georgia and beyond.
               Case managers. Program directors. CoC navigators. Outreach workers.
               If you're in this work, you belong here.
@@ -72,51 +41,52 @@ export default function Community() {
               Join the Community Garden
             </a>
           </div>
-        </section>
 
-        {/* === THE BRIDGE === */}
-        <section ref={bridgeRef} className="community-pane community-pane--bridge reveal reveal-delay-2" aria-label="The Bridge">
-          <span className="eyebrow" style={{ color: 'rgba(255,255,255,0.5)' }}>
-            For individuals &amp; families
-          </span>
-          <h2>The Bridge</h2>
-          <p className="community-sub">
-            "For people who are navigating crisis — and those who want to light the way."
-          </p>
-
-          <p className="community-desc">
-            The Bridge is TSE's community space for individuals navigating housing
-            instability — and for those who have walked that road and found their way
-            through. It was built on a simple belief: the knowledge that got you through
-            your hardest moment is exactly what someone else needs right now.
-          </p>
-
-          <div className="community-features">
+          <div className="community-full-features">
             <div className="community-feature">
-              A place to ask questions without judgment — about programs, applications,
-              eligibility, and what to do when you don't know what to do
+              Virtual Garden Meetings hosted by TSE — structured conversations about
+              what's moving and what needs attention in the system
             </div>
             <div className="community-feature">
-              Shared knowledge from people who have navigated the same systems —
-              what worked, what didn't, and what you should know going in
+              Resource sharing threads: what's available, what's changed, what nobody
+              knows about yet but should
             </div>
             <div className="community-feature">
-              Connection to others who understand what this experience actually feels
-              like — because housing crisis is isolating, and it doesn't have to be
+              Case complexity discussion at the structural level — not individual clients,
+              but the coordination patterns that keep surfacing across providers
             </div>
             <div className="community-feature">
-              Not a hotline. Not a case management intake. Not a place to be processed.
-              A community — with the warmth and honesty that word is supposed to mean.
+              The kind of honest provider conversation that only happens when people
+              feel like they're among colleagues, not at a conference
+            </div>
+            <div className="community-feature">
+              A governed space — participation is intentional, not passive. TSE hosts
+              and maintains the quality of the room.
             </div>
           </div>
+        </div>
+      </section>
 
-          <div>
-            <p style={{
-              fontSize: '14px',
-              color: 'rgba(255,255,255,0.6)',
-              marginBottom: '20px',
-              fontStyle: 'italic',
-            }}>
+      {/* ============================================================
+          THE BRIDGE — full width
+      ============================================================ */}
+      <section ref={bridgeRef} className="community-full community-full--bridge reveal" aria-label="The Bridge">
+        <div className="community-full-inner community-full-inner--reverse">
+          <div className="community-full-text">
+            <span className="eyebrow" style={{ color: 'rgba(255,255,255,0.55)' }}>
+              For individuals &amp; families
+            </span>
+            <h2>The Bridge</h2>
+            <p className="community-sub">
+              For people navigating crisis — and those who want to light the way.
+            </p>
+            <p className="community-desc">
+              The Bridge is TSE's community space for individuals navigating housing
+              instability — and for those who have walked that road and found their way
+              through. It was built on a simple belief: the knowledge that got you through
+              your hardest moment is exactly what someone else needs right now.
+            </p>
+            <p style={{ fontSize: '14px', color: 'rgba(255,255,255,0.55)', marginBottom: '28px', fontStyle: 'italic' }}>
               Who belongs: people in crisis. People who have been through crisis.
               Family members. Advocates. Anyone who wants to show up for someone
               who needs it.
@@ -126,12 +96,32 @@ export default function Community() {
               className="btn btn-outline"
               target="_blank"
               rel="noopener noreferrer"
+              style={{ borderColor: 'rgba(255,255,255,0.6)', color: 'var(--white)' }}
             >
               Join The Bridge
             </a>
           </div>
-        </section>
-      </div>
+
+          <div className="community-full-features">
+            <div className="community-feature" style={{ borderBottomColor: 'rgba(255,255,255,0.15)' }}>
+              A place to ask questions without judgment — about programs, applications,
+              eligibility, and what to do when you don't know what to do
+            </div>
+            <div className="community-feature" style={{ borderBottomColor: 'rgba(255,255,255,0.15)' }}>
+              Shared knowledge from people who have navigated the same systems —
+              what worked, what didn't, and what you should know going in
+            </div>
+            <div className="community-feature" style={{ borderBottomColor: 'rgba(255,255,255,0.15)' }}>
+              Connection to others who understand what this experience actually feels
+              like — because housing crisis is isolating, and it doesn't have to be
+            </div>
+            <div className="community-feature" style={{ borderBottomColor: 'rgba(255,255,255,0.15)' }}>
+              Not a hotline. Not a case management intake. Not a place to be processed.
+              A community — with the warmth and honesty that word is supposed to mean.
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* ============================================================
           HOW THEY CONNECT

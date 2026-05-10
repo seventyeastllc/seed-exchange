@@ -30,8 +30,9 @@ export default function Home() {
           </h1>
 
           <p className="home-hero-sub">
-            People are not falling through the cracks because help doesn't exist.
-            They're falling because coordination does not.
+            The support exists. The programs are there.
+            What's missing is someone holding the thread between them.
+            That's the work TSE does.
           </p>
 
           <div className="home-hero-ctas">
@@ -77,15 +78,16 @@ export default function Home() {
       {/* ============================================================
           THREE PILLARS
       ============================================================ */}
-      <section className="section" aria-label="What TSE closes">
+      <section className="section" aria-label="What TSE makes possible">
         <div className="container">
           <div className="section-header">
             <span className="eyebrow">The work</span>
-            <h2>What TSE closes.</h2>
+            <h2>What TSE makes possible.</h2>
             <p>
-              The gap between a person and their stability is rarely a resource gap.
-              It is a knowledge gap, a proximity gap, and an urgency gap.
-              TSE closes all three — with follow-through, not referrals.
+              The distance between a person and their stability is rarely about resources.
+              It's about visibility, follow-through, and someone working the case
+              with the urgency the situation actually demands.
+              That's what TSE brings — with follow-through, not just referrals.
             </p>
           </div>
         </div>
@@ -97,7 +99,7 @@ export default function Home() {
           <article className="pillar-card reveal">
             <div className="pillar-number" aria-hidden="true">01</div>
             <h3 className="pillar-title">Visibility</h3>
-            <span className="pillar-sub">The knowledge gap</span>
+            <span className="pillar-sub">The knowledge barrier</span>
             <p className="pillar-text">
               The programs exist. The eligibility is there. The knowledge isn't.
               A person who qualifies for housing support may never know the program
@@ -110,7 +112,7 @@ export default function Home() {
           <article className="pillar-card reveal reveal-delay-2">
             <div className="pillar-number" aria-hidden="true">02</div>
             <h3 className="pillar-title">Access</h3>
-            <span className="pillar-sub">The proximity gap</span>
+            <span className="pillar-sub">The follow-through</span>
             <p className="pillar-text">
               A referral made is not a referral resolved. Someone has to follow through
               until the door actually opens — until the application gets submitted,
@@ -122,12 +124,12 @@ export default function Home() {
           <article className="pillar-card reveal reveal-delay-4">
             <div className="pillar-number" aria-hidden="true">03</div>
             <h3 className="pillar-title">Resolution</h3>
-            <span className="pillar-sub">The urgency gap</span>
+            <span className="pillar-sub">The urgency it deserves</span>
             <p className="pillar-text">
               Stability should be treated with urgency — not held at the pace of an
               intake process designed for workflow, not for the person waiting on the
               other side of it. A family navigating a housing decision cannot afford
-              to wait for the system to catch up. TSE moves cases forward with the
+              to wait for the process to catch up. TSE works each case with the
               urgency the situation actually demands.
             </p>
           </article>
@@ -205,7 +207,7 @@ export default function Home() {
             </span>
             <h2 style={{ color: 'var(--white)' }}>The people who need the most deliberate coordination to reach stability.</h2>
             <p style={{ color: 'rgba(255,255,255,0.6)', maxWidth: '640px' }}>
-              TSE was built specifically to serve the people who fall outside traditional
+              TSE was built specifically to serve the people who sit outside traditional
               intervention pathways — because those are the people who need the most
               deliberate, sustained coordination to reach stability.
             </p>
@@ -227,7 +229,7 @@ export default function Home() {
               <h4>Individuals with disabilities in housing crisis</h4>
               <p>
                 The intersection of disability and homelessness creates documentation
-                barriers, eligibility gaps, and coordination failures that require a
+                barriers, eligibility complexity, and coordination failures that require a
                 dedicated navigator — someone who knows the system, knows the waivers,
                 and will not stop at the first closed door.
               </p>
@@ -247,9 +249,9 @@ export default function Home() {
               <h4>Those outside traditional intervention pathways</h4>
               <p>
                 Some people don't fit the profiles that existing programs were designed
-                for. They cycle through systems without stabilizing. TSE exists to close
-                the gap for the people no other system is specifically built to catch —
-                the ones coordination keeps forgetting.
+                for. They cycle through systems without stabilizing. TSE works specifically
+                for the people no other program is built to hold —
+                the ones coordination keeps passing over.
               </p>
             </article>
           </div>

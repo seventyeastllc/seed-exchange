@@ -16,10 +16,10 @@ export default function About() {
           <span className="eyebrow" style={{ color: 'rgba(255,255,255,0.35)' }}>
             About The Seed Exchange
           </span>
-          <h1>Built from proximity.<br />Not from a boardroom.</h1>
+          <h1>Built from proximity.<br />Not from a distance.</h1>
           <p>
-            TSE exists because coordination gaps are not hypothetical. They are lived.
-            Every gap TSE closes, Ravonda has stood inside one.
+            TSE exists because coordination failures are not hypothetical. They are lived.
+            Every barrier this work addresses, this team has navigated firsthand.
           </p>
         </div>
       </section>
@@ -39,23 +39,27 @@ export default function About() {
               Founder's Note
             </h3>
             <p style={{ fontSize: '17px', lineHeight: 1.85, marginBottom: '22px', fontStyle: 'italic', color: 'var(--body)' }}>
-              There's a version of this page that would give you credentials, a timeline,
-              and a polished account of how The Seed Exchange was founded.
-            </p>
-            <p style={{ fontSize: '17px', lineHeight: 1.85, marginBottom: '22px', fontStyle: 'italic', color: 'var(--body)' }}>
-              That's not this page.
+              There's a version of this page that leads with credentials, a polished timeline,
+              and a clean founding story. That version exists somewhere. It's just not here.
             </p>
             <p style={{ fontSize: '17px', lineHeight: 1.85, marginBottom: '22px', color: 'var(--body)' }}>
-              What you'll find here is where TSE actually came from — which is the same
-              place it's going: inside the gaps. I've been the caregiver who didn't know
-              the waiver existed. I've been the person on hold with a program that had
-              already closed its waitlist, and nobody told me. I've made the referral,
-              followed up when it went nowhere, and stayed on the case long past the point
-              where anyone expected me to — because I understood that if I let go, nobody
-              else was holding on.
+              What I can tell you is where this actually came from.
+            </p>
+            <p style={{ fontSize: '17px', lineHeight: 1.85, marginBottom: '22px', color: 'var(--body)' }}>
+              I've been the caregiver who didn't know the waiver existed. I've been the
+              person on hold with a program that closed its waitlist three months ago —
+              and nobody said a word. I've made referrals that went nowhere, followed up
+              anyway, tracked down the right contact, and stayed on the case long past
+              the point where anyone expected me to.
+            </p>
+            <p style={{ fontSize: '17px', lineHeight: 1.85, marginBottom: '22px', color: 'var(--body)' }}>
+              Not because the job description said to. Because I understood that if I let
+              go, nobody else was holding on.
             </p>
             <p style={{ fontSize: '17px', lineHeight: 1.85, marginBottom: '32px', color: 'var(--body)' }}>
-              TSE is not a program I designed. It is a response I built — from the inside out.
+              TSE is not a program I designed from the outside. It is a response I built
+              from inside the work — because I had been on both sides of the coordination
+              failure, and I knew exactly what was missing.
             </p>
             <p style={{
               fontSize: '16px',
@@ -82,40 +86,42 @@ export default function About() {
               <h2 style={{ marginBottom: '32px' }}>Where TSE came from.</h2>
 
               <p>
-                Ravonda did not design The Seed Exchange in a room full of
-                whiteboards. She built it from the inside of every gap it is meant to close.
-                She knows what it feels like to be the caregiver who didn't know the waiver
-                existed. She has been the person on hold with a program that had already
-                closed its waitlist three months ago — and nobody told her.
+                The Seed Exchange did not start with a whiteboard. It started with the work.
               </p>
 
               <p>
-                She has advocated for people sitting on waitlists that nobody was watching.
-                She has made the referral, followed up when the referral went nowhere,
-                tracked down the right contact, and stayed on the case until something
-                actually moved. Not because it was the job description. Because she
-                understood that if she let go, nobody else was holding on.
+                There is a principle embedded in this name. Seedtime and harvest —
+                what you put in is what you get out. Every referral followed through.
+                Every case held past the point where most people let go. Every relationship
+                built before the crisis, so that when someone needs a warm connection,
+                there is actually warmth there. That is the seed. What grows from it
+                is stability. Visibility. Resolution. Real outcomes for real people.
               </p>
 
               <p>
-                That proximity — to the systems, to the people the systems were not
-                built for, and to the gap between the two — is what TSE is made of.
-                This is not a program. It is a response. A deliberate, practiced,
-                built-from-experience response to the coordination failures that
-                stability-seeking people cannot afford.
+                This team knows what it looks like when coordination breaks down. Not
+                from reports. From experience. Being the caregiver who didn't know the
+                waiver existed. Being on hold with a program that closed its waitlist
+                three months ago and told nobody. Advocating for people on waitlists
+                nobody was watching. Making the referral, following up when it went
+                nowhere, tracking down the right contact, and staying on the case.
+              </p>
+
+              <p>
+                Not because it was required. Because if we let go, nobody else was holding on.
               </p>
 
               <blockquote className="pull-quote">
-                "Access without coordination is not access. I have lived that sentence.
+                "Access without coordination is not access. We have lived that sentence.
                 TSE exists to make sure fewer people have to."
               </blockquote>
 
               <p>
-                The Seed Exchange launched because the gap between a referral made and a
-                referral resolved is where people fall. Not through negligence. Not through
-                lack of care. Through the structural reality that service systems are
-                designed for workflow, not for the human being waiting on the other side
-                of it. TSE is designed for the human being.
+                That proximity — to the systems, to the people those systems were not
+                built for, and to the space between them — is what TSE is made of.
+                This is not a program. It is a response. A deliberate, practiced,
+                built-from-experience response to the coordination failures that
+                stability-seeking people cannot afford.
               </p>
             </div>
 
@@ -146,14 +152,14 @@ export default function About() {
               }}>
                 <span className="eyebrow">What drives the work</span>
                 <p style={{ fontSize: '15px', lineHeight: 1.78, marginBottom: '20px' }}>
-                  The issue is not usually that resources don't exist. The issue is
-                  that people can't see them, can't get to them, and can't get them
-                  resolved fast enough.
+                  The issue is rarely that resources don't exist. The issue is that
+                  people can't find them, can't reach them, and can't get to resolution
+                  fast enough.
                 </p>
                 <p style={{ fontSize: '15px', lineHeight: 1.78 }}>
-                  TSE closes the knowledge gap, the proximity gap, and the urgency gap —
-                  with follow-through, with human attention, and with the kind of
-                  persistence the system is not designed to provide.
+                  TSE works the three barriers that keep people from stability:
+                  visibility, access, and urgency — with follow-through, human attention,
+                  and the kind of persistence the system is not designed to provide.
                 </p>
               </div>
             </div>
@@ -174,9 +180,9 @@ export default function About() {
               Coordination is not a byproduct of service delivery. It is a discipline.
             </h2>
             <p style={{ color: '#2D2D2D', fontSize: '18px', lineHeight: 1.78, marginBottom: '28px' }}>
-              TSE does not exist to add another program to the ecosystem. It exists
-              to make the ecosystem work — to close the distance between what's available
-              and what's actually reached, between a referral made and a case resolved.
+              TSE does not exist to add another program to the sector. It exists
+              to make what's already there work — to connect what's available
+              to what's actually reached, to turn a referral made into a case resolved.
             </p>
             <p style={{ color: '#2D2D2D', fontSize: '18px', lineHeight: 1.78, marginBottom: '28px' }}>
               The work is relational. It is followed through. It is sustained past the
@@ -210,21 +216,21 @@ export default function About() {
             <p style={{ fontSize: '17px', lineHeight: 1.8, marginBottom: '22px' }}>
               Think of TSE as the connective tissue between providers and the people
               they serve. When a referral gets made and goes nowhere, TSE finds out why
-              and moves it forward. When a complex case involves three agencies and nobody
+              and works it forward. When a complex case involves three agencies and nobody
               is taking point, TSE takes point. When a family qualifies for a program
               they've never heard of, TSE makes sure they hear about it — and stays with
               them until the door actually opens.
             </p>
             <p style={{ fontSize: '17px', lineHeight: 1.8, marginBottom: '22px' }}>
-              TSE does not duplicate what providers do. It closes the gap between what
-              they do and where it ends. The navigation, the follow-through, the case
+              TSE does not duplicate what providers do. It works in the space between
+              what they do and where it ends. The navigation, the follow-through, the case
               conferencing support, the system visibility — that is TSE's lane, and TSE
               stays in it.
             </p>
             <p style={{ fontSize: '17px', lineHeight: 1.8 }}>
-              The result is an ecosystem where providers can do their work at a higher
-              level, where complex cases actually move, and where people who have moved
-              through multiple systems without finding solid ground start finding their way through.
+              The result is a sector where providers can do their work at a higher
+              level, where complex cases actually reach resolution, and where people who have
+              cycled through multiple programs without finding solid ground start finding their way through.
             </p>
           </div>
 

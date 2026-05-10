@@ -30,8 +30,8 @@ function WaitlistForm() {
           You're on the list.
         </p>
         <p>
-          Founding member access is limited. We'll be in touch before the fall 2026 launch
-          with next steps.
+          Founders Circle access is limited to 20 organizations. TSE will be in touch
+          before the fall 2026 launch to discuss fit and next steps.
         </p>
       </div>
     )
@@ -79,7 +79,7 @@ export default function Lattice() {
           <span className="eyebrow" style={{ color: 'rgba(255,255,255,0.35)' }}>
             Lattice — Partner Management Platform
           </span>
-          <h1>A resource directory<br />built to stay accurate.</h1>
+          <h1>A resource directory<br />designed to stay accurate.</h1>
           <p>
             Providers across Georgia have resources their clients need. The problem
             is those resources aren't visible to the people who need to refer to them —
@@ -110,7 +110,7 @@ export default function Lattice() {
               <p style={{ color: 'rgba(255,255,255,0.65)', fontSize: '17px', lineHeight: 1.8, marginBottom: '24px' }}>
                 The result is that referrals go to dead ends. Clients wait longer than they
                 should while navigators work backward from the referral that didn't land.
-                And the resources that could close the gap remain invisible — not because
+                And the resources that could reach them remain invisible — not because
                 they don't exist, but because nobody has a live, accurate, accountable
                 view of what's actually accessible right now.
               </p>
@@ -121,9 +121,9 @@ export default function Lattice() {
 
             <div>
               {[
-                { stat: '1 in 3', label: 'referrals reaches a stale or closed resource' },
-                { stat: '4–6 hrs', label: 'average navigator time per week spent verifying availability' },
-                { stat: '0', label: "governed, real-time resource platforms built for Georgia's CoC ecosystem — until now" },
+                { stat: '1 in 3', label: 'referrals — in TSE\'s field experience — reaches a stale or closed resource' },
+                { stat: '4–6 hrs', label: 'what navigators in TSE\'s network report spending weekly to verify what\'s actually available' },
+                { stat: '0', label: "governed, real-time resource directories designed for Georgia's CoC ecosystem — until now" },
               ].map((item, i) => (
                 <div
                   key={i}
@@ -155,7 +155,7 @@ export default function Lattice() {
                 </div>
               ))}
               <p style={{ fontSize: '12px', color: 'rgba(255,255,255,0.2)', marginTop: '16px', fontStyle: 'italic' }}>
-                * Figures reflect TSE's direct field experience in Georgia's CoC ecosystem. Data-sourced metrics will be published at platform launch.
+                Figures reflect TSE's direct field observations across Georgia's CoC ecosystem. Research-sourced benchmarks will be published at platform launch.
               </p>
             </div>
           </div>
@@ -262,7 +262,7 @@ export default function Lattice() {
               {
                 step: '1',
                 title: 'Navigator identifies a need',
-                body: "A navigator working a case identifies a specific gap — housing, benefits, services — and searches Lattice for what's available right now.",
+                body: "A navigator working a case identifies a specific need — housing, benefits, services — and searches Lattice for what's actually available right now.",
               },
               {
                 step: '2',
@@ -277,7 +277,7 @@ export default function Lattice() {
               {
                 step: '4',
                 title: 'Resolution is confirmed',
-                body: 'Follow-through is built in. The platform tracks whether the referral landed. TSE monitors for unresolved connections and moves them forward.',
+                body: 'Follow-through is built in. The platform tracks whether the referral landed. TSE monitors for unresolved connections and works them to resolution.',
               },
             ].map((item, i) => (
               <div
@@ -325,12 +325,12 @@ export default function Lattice() {
                 active: true,
                 date: 'Now — Spring 2026',
                 title: 'Early Access Interest',
-                body: 'TSE is collecting interest from providers and organizations across Georgia. Join the list to be considered for founding member access.',
+                body: 'TSE is collecting interest from providers and organizations across Georgia. Add your name to be considered for the Founders Circle — limited to 20 organizations.',
               },
               {
                 date: 'Summer 2026',
-                title: 'Founding Member Onboarding',
-                body: 'A founding cohort of up to 20 organizations will be onboarded — vetted, governed, and set up with Lattice profiles ahead of the public launch.',
+                title: 'Founders Circle — Demo Access',
+                body: 'A founding cohort of up to 20 vetted organizations receives demo access to Lattice ahead of the public launch. This is preview access — not the full platform. Founders help stress-test the network and shape how the governance model works at scale.',
               },
               {
                 date: 'Fall 2026',
@@ -359,18 +359,18 @@ export default function Lattice() {
       <div className="lattice-waitlist" aria-label="Early access waitlist">
         <div className="container">
           <span className="eyebrow" style={{ color: 'rgba(255,255,255,0.35)' }}>
-            Founding member access
+            Founders Circle — limited to 20 organizations
           </span>
-          <h2>Get early access to Lattice.</h2>
+          <h2>Request early access to Lattice.</h2>
           <p>
-            Founding member access is limited and intentionally governed. Organizations
-            that join early help shape how the platform works at launch. Add your name now —
-            we'll be in touch before fall 2026.
+            Founders Circle access is limited, governed, and intentional. Organizations that join
+            early help shape how the platform works before it goes public. Add your name —
+            TSE will be in touch to discuss fit before fall 2026.
           </p>
           <WaitlistForm />
           <p style={{ marginTop: '20px', fontSize: '13px', color: 'rgba(255,255,255,0.3)' }}>
-            Lattice is membership-based. Joining the interest list does not guarantee membership.
-            TSE will reach out to discuss fit and onboarding.
+            Lattice is membership-based. Interest list submission does not guarantee access.
+            TSE will reach out directly to discuss fit and next steps.
           </p>
           <div style={{ marginTop: '32px' }}>
             <Link to="/partner" style={{ color: 'rgba(255,255,255,0.45)', fontSize: '14px', borderBottom: '1px solid rgba(255,255,255,0.15)', paddingBottom: '2px' }}>

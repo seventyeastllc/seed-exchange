@@ -207,7 +207,7 @@ export default function Home() {
             </span>
             <h2 style={{ color: 'var(--white)' }}>The people who need the most deliberate coordination to reach stability.</h2>
             <p style={{ color: 'rgba(255,255,255,0.6)', maxWidth: '640px' }}>
-              TSE was built specifically to serve the people who sit outside traditional
+              TSE was designed specifically to serve the people who sit outside traditional
               intervention pathways — because those are the people who need the most
               deliberate, sustained coordination to reach stability.
             </p>
@@ -215,43 +215,46 @@ export default function Home() {
 
           <div ref={servesRef} className="serves-grid">
             <article className="serve-item reveal">
-              <h4>Elderly individuals experiencing homelessness</h4>
+              <h4>Homeless Families. Complex Care Needs.</h4>
               <p>
-                Adults 55 and older navigating housing crisis face layered barriers —
-                limited mobility, fixed income, health complexity, and invisibility
-                in systems designed for younger populations. Coordination for this
-                population requires patience, persistence, and knowledge of programs
-                that most navigators never encounter.
-              </p>
-            </article>
-
-            <article className="serve-item reveal reveal-delay-2">
-              <h4>Individuals with disabilities in housing crisis</h4>
-              <p>
-                The intersection of disability and homelessness creates documentation
-                barriers, eligibility complexity, and coordination failures that require a
-                dedicated navigator — someone who knows the system, knows the waivers,
-                and will not stop at the first closed door.
-              </p>
-            </article>
-
-            <article className="serve-item reveal reveal-delay-1">
-              <h4>Families raising children with special needs</h4>
-              <p>
-                Parents managing a child's disability while navigating a housing crisis
-                are navigating two complex systems at once — often alone. TSE coordinates
-                across those systems so families can focus on what only they can do:
+                When a family is in housing crisis and a child has a disability, autism,
+                ADHD, or a significant developmental need, there are two complex systems
+                to navigate at once — and they rarely talk to each other. TSE coordinates
+                across both so caregivers can focus on what only they can do:
                 showing up for their children.
               </p>
             </article>
 
-            <article className="serve-item reveal reveal-delay-3">
-              <h4>Those outside traditional intervention pathways</h4>
+            <article className="serve-item reveal reveal-delay-2">
+              <h4>Adults 55+ Experiencing Homelessness</h4>
               <p>
-                Some people don't fit the profiles that existing programs were designed
-                for. They cycle through systems without stabilizing. TSE works specifically
-                for the people no other program is built to hold —
-                the ones coordination keeps passing over.
+                Older adults navigating housing crisis face layered barriers — limited
+                mobility, fixed income, health complexity, and program criteria designed
+                around younger population profiles. A VI-SPDAT score alone doesn't
+                capture what this population needs. TSE works specifically with adults
+                55+ experiencing high chronicity, chronic disability, or terminal illness
+                who require sustained coordination to reach stability.
+              </p>
+            </article>
+
+            <article className="serve-item reveal reveal-delay-1">
+              <h4>Moderate-Acuity Households</h4>
+              <p>
+                Households scoring between 4 and 7 on the VI-SPDAT often fall below
+                the threshold for Rapid Rehousing while still carrying significant
+                barriers. TSE works this population with the same urgency as higher-acuity
+                cases — including adults 55 and older who score moderate but need anything but
+                a moderate response.
+              </p>
+            </article>
+
+            <article className="serve-item reveal reveal-delay-3">
+              <h4>Enrichment Cohorts</h4>
+              <p>
+                For individuals and households scoring 4 or below on the VI-SPDAT,
+                TSE provides structured group programming and enrichment cohorts —
+                community-based pathways designed to build the knowledge, connections,
+                and stability that make forward movement possible and lasting.
               </p>
             </article>
           </div>

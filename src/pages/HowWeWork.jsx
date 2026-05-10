@@ -15,7 +15,7 @@ export default function HowWeWork() {
           <span className="eyebrow" style={{ color: 'rgba(255,255,255,0.35)' }}>
             The model
           </span>
-          <h1>Built for both sides of the gap.</h1>
+          <h1>Designed for both sides of the work.</h1>
           <p>
             TSE works alongside service providers and alongside the people providers
             are trying to reach. The coordination goes both directions.
@@ -35,21 +35,21 @@ export default function HowWeWork() {
           <h3>Your services. Extended further.</h3>
           <p style={{ color: 'rgba(255,255,255,0.65)', marginBottom: '8px', fontSize: '16px', lineHeight: 1.75 }}>
             TSE partners with your organization to strengthen the coordination layer —
-            so your services reach the people they were designed to serve, and complex cases
+            so your services reach the people they were designed to reach, and complex cases
             don't fall apart between departments, agencies, or intake windows.
           </p>
 
           <ul className="audience-list" role="list">
             <li>Referral coordination and tracking — from first contact through resolution</li>
             <li>Case conferencing support on complex, multi-system cases</li>
-            <li>System visibility into why cases stall — and what it takes to move them forward</li>
+            <li>System visibility into where cases pause — and what it takes to reach resolution</li>
             <li>Outcome reporting alignment so your data tells the right story</li>
             <li>Navigation support for clients who are difficult to reach or serve</li>
           </ul>
 
           <p style={{ color: 'rgba(255,255,255,0.55)', fontSize: '15px', fontStyle: 'italic', lineHeight: 1.7, marginTop: '8px' }}>
-            TSE does not duplicate your services. It closes the gap between your
-            services and the people they were built to reach.
+            TSE does not duplicate your services. It works in the space between your
+            services and the people they were designed to reach.
           </p>
 
           <div style={{ marginTop: '40px', display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
@@ -105,7 +105,7 @@ export default function HowWeWork() {
             <h2>The path to partnership.</h2>
             <p>
               Formal coordination partnerships are built on real relationships.
-              Here's how organizations typically move through TSE's ecosystem —
+              Here's how organizations typically find their way into TSE's network —
               from first connection to full partnership.
             </p>
           </div>
@@ -134,7 +134,7 @@ export default function HowWeWork() {
               <h4 className="step-label">Formal Partnership</h4>
               <p className="step-desc">
                 Contracted coordination capacity — navigation, referral tracking,
-                case conferencing support, and outcome alignment. Built for your program.
+                case conferencing support, and outcome alignment. Designed for your program.
               </p>
             </div>
 

@@ -45,7 +45,7 @@ export default function Community() {
           <div className="community-full-features">
             <div className="community-feature">
               Virtual Garden Meetings hosted by TSE — structured conversations about
-              what's moving and what needs attention in the system
+              what's moving and what needs attention across the sector
             </div>
             <div className="community-feature">
               Resource sharing threads: what's available, what's changed, what nobody
@@ -203,7 +203,7 @@ export default function Community() {
               TSE hosts recurring virtual Garden Meetings inside the Community Garden —
               structured, facilitated conversations for service providers. Not a
               presentation. Not a training. A working conversation about what's
-              actually happening in the system.
+              actually moving — and what's not.
             </p>
             <p style={{ fontSize: '17px', lineHeight: 1.78, marginBottom: '22px' }}>
               Topics come from the community — what referral flows are breaking down,

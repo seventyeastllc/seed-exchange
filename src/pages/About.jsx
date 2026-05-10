@@ -159,7 +159,7 @@ export default function About() {
                 <p style={{ fontSize: '15px', lineHeight: 1.78 }}>
                   TSE works the three barriers that keep people from stability:
                   visibility, access, and urgency — with follow-through, human attention,
-                  and the kind of persistence the system is not designed to provide.
+                  and the kind of persistence that intake processes are not designed to provide.
                 </p>
               </div>
             </div>
@@ -187,7 +187,7 @@ export default function About() {
             <p style={{ color: '#2D2D2D', fontSize: '18px', lineHeight: 1.78, marginBottom: '28px' }}>
               The work is relational. It is followed through. It is sustained past the
               point where most referrals end. And it is grounded in a belief that the people
-              who have been most failed by the system deserve the most careful, deliberate
+              most often passed over by existing programs deserve the most careful, deliberate
               coordination — not the least.
             </p>
             <p style={{ color: '#2D2D2D', fontSize: '18px', lineHeight: 1.78 }}>
@@ -355,7 +355,7 @@ export default function About() {
                 </p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                   {[
-                    { label: 'Referral coordination', desc: 'Making sure handoffs land' },
+                    { label: 'Referral coordination', desc: 'Making sure connections reach resolution' },
                     { label: 'Case navigation', desc: 'Following the person, not the form' },
                     { label: 'Follow-through', desc: 'Staying until there is resolution' },
                     { label: 'Case conferencing', desc: 'Multi-agency alignment on complex cases' },
@@ -428,7 +428,7 @@ export default function About() {
                   Access &amp; Resolution
                 </h4>
                 <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '13px', lineHeight: 1.7, marginBottom: '28px' }}>
-                  The people the sector is built to serve — too often cycling through programs without finding solid ground.
+                  The people the sector is designed to serve — too often navigating through programs without reaching solid ground.
                 </p>
                 <div style={{ borderTop: '1px solid rgba(255,255,255,0.08)', paddingTop: '20px', marginTop: 'auto' }}>
                   {[
@@ -483,7 +483,7 @@ export default function About() {
               </p>
               <p style={{ fontSize: '17px', lineHeight: 1.8 }}>
                 TSE and GGC are complementary by design. The same proximity. The same
-                follow-through. Two structures built to meet people wherever they are
+                follow-through. Two structures designed to meet people wherever they are
                 in the system — and wherever the system isn't reaching.
               </p>
             </div>
@@ -597,7 +597,7 @@ export default function About() {
             Ready to build something that reaches people?
           </h2>
           <p style={{ color: 'rgba(255,255,255,0.8)', maxWidth: '520px', margin: '0 auto 40px', fontSize: '17px' }}>
-            TSE is built for the providers, navigators, and organizations that believe
+            TSE is designed for the providers, navigators, and organizations that believe
             coordination is a discipline worth investing in.
           </p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>

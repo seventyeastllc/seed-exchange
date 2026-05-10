@@ -236,9 +236,9 @@ export default function PartnerWithUs() {
               <div className="package-name-block">
                 <div className="package-name">Housing Navigator Partnership</div>
                 <p className="package-sub">
-                  Built on TSE's legacy program model. Purpose-built for organizations
+                  Grounded in TSE's legacy program model. Designed for organizations
                   entering or expanding housing navigation work. TSE is a coordination partner —
-                  not an employee, not a vendor. Capacity that's already built, already working.
+                  not an employee, not a vendor. Capacity that's already in place, already working.
                 </p>
               </div>
             </div>
@@ -317,8 +317,9 @@ export default function PartnerWithUs() {
             <span className="eyebrow">À la carte</span>
             <h2>Enrichment services.</h2>
             <p>
-              Beyond the core partnership, TSE offers focused engagements for organizations
-              that need targeted capacity — available at per-session or per-service rates.
+              Beyond the core partnership, TSE offers focused engagements across each of the three
+              coordination areas — Visibility, Access, and Resolution — available at per-session
+              or per-service rates.
             </p>
             <p style={{ fontSize: '13px', color: 'var(--teal)', marginTop: '10px', fontStyle: 'italic', fontWeight: 400 }}>
               Enrichment services are available as separate, per-engagement contracts — independent of the core partnership rate.
@@ -414,7 +415,7 @@ export default function PartnerWithUs() {
             <article className="why-item reveal reveal-delay-4">
               <h4>Complement, not competition</h4>
               <p>
-                TSE's model is built to extend what your organization already does —
+                TSE's model is designed to extend what your organization already does —
                 not to build something that competes with it. Every partnership is
                 designed around what you're doing and what forward movement actually requires.
               </p>

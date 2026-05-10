@@ -1733,6 +1733,9 @@ p {
   .package-header { flex-direction: column; gap: 24px; }
   .diagram-row { flex-direction: column; }
   .diagram-arrow { justify-content: center; transform: rotate(90deg); padding: 4px 0; }
+  .diagram-grid-5col { grid-template-columns: 1fr !important; }
+  .diagram-grid-5col > *:nth-child(2),
+  .diagram-grid-5col > *:nth-child(4) { display: none; }
   .events-grid { grid-template-columns: 1fr; }
   .past-event-item { grid-template-columns: 1fr; gap: 8px; }
   .past-event-tag { display: none; }

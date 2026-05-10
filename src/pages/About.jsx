@@ -234,31 +234,229 @@ export default function About() {
             </p>
           </div>
 
-          {/* Visual diagram */}
+          {/* Visual diagram — mid-level ecosystem */}
           <div className="ecosystem-diagram" style={{
             background: 'var(--light-bg)',
-            padding: '56px',
+            padding: '64px 56px',
             marginTop: '40px',
           }}>
-            <div className="diagram-row">
-              <div className="diagram-box diagram-box--providers">
-                <h5>Service Providers</h5>
-                <div className="diagram-label">Programs. Resources. Capacity.</div>
-              </div>
-              <div className="diagram-arrow" aria-hidden="true">⟷</div>
-              <div className="diagram-box diagram-box--tse">
-                <h5>The Seed Exchange</h5>
-                <div className="diagram-label" style={{ fontFamily: 'var(--font-serif)', fontSize: '20px', color: 'var(--white)' }}>
-                  Coordination. Navigation. Follow-through.
+            {/* Diagram header */}
+            <div style={{ textAlign: 'center', marginBottom: '48px' }}>
+              <span className="eyebrow">How the coordination layer works</span>
+              <p style={{ fontSize: '14px', color: 'var(--body)', opacity: 0.6, marginTop: '8px', maxWidth: '480px', margin: '8px auto 0' }}>
+                TSE operates in the space between providers and people — the layer that makes referrals reach resolution.
+              </p>
+            </div>
+
+            {/* Three-column diagram with connectors */}
+            <div className="diagram-grid-5col" style={{
+              display: 'grid',
+              gridTemplateColumns: '1fr 96px 1.25fr 96px 1fr',
+              alignItems: 'stretch',
+            }}>
+
+              {/* SERVICE PROVIDERS */}
+              <div style={{
+                background: '#1A2E4A',
+                padding: '40px 36px',
+                display: 'flex',
+                flexDirection: 'column',
+              }}>
+                <div style={{
+                  fontSize: '10px',
+                  letterSpacing: '0.14em',
+                  textTransform: 'uppercase',
+                  color: 'rgba(255,255,255,0.38)',
+                  marginBottom: '14px',
+                }}>
+                  Service Providers
+                </div>
+                <h4 style={{ color: 'var(--white)', fontSize: '19px', fontWeight: 600, marginBottom: '10px', lineHeight: 1.3 }}>
+                  Programs &amp; Resources
+                </h4>
+                <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '13px', lineHeight: 1.7, marginBottom: '28px' }}>
+                  The organizations doing direct housing, crisis services, and case management work.
+                </p>
+                <div style={{ borderTop: '1px solid rgba(255,255,255,0.08)', paddingTop: '20px', marginTop: 'auto' }}>
+                  {[
+                    'CoC network partners',
+                    'HMIS-participating organizations',
+                    'Emergency & transitional housing',
+                    'Case management teams',
+                    'Wraparound service programs',
+                  ].map((item, i) => (
+                    <div key={i} style={{
+                      fontSize: '12px',
+                      color: 'rgba(255,255,255,0.55)',
+                      padding: '8px 0',
+                      borderBottom: '1px solid rgba(255,255,255,0.05)',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '10px',
+                    }}>
+                      <span style={{ color: 'var(--teal)', fontSize: '8px', flexShrink: 0 }}>◆</span>
+                      {item}
+                    </div>
+                  ))}
                 </div>
               </div>
-              <div className="diagram-arrow" aria-hidden="true">⟷</div>
-              <div className="diagram-box diagram-box--people">
-                <h5>People Seeking Stability</h5>
-                <div className="diagram-label">Access. Resolution. Stability.</div>
+
+              {/* CONNECTOR: Providers ↔ TSE */}
+              <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                background: '#EEECEA',
+                gap: '28px',
+                padding: '20px 10px',
+              }}>
+                {/* Flow: Providers → TSE */}
+                <div style={{ textAlign: 'center' }}>
+                  <div style={{ fontSize: '10px', color: 'rgba(0,0,0,0.38)', lineHeight: 1.5, marginBottom: '7px', letterSpacing: '0.02em' }}>
+                    Referrals<br />Case data
+                  </div>
+                  <div style={{ position: 'relative', width: '44px', height: '2px', background: 'var(--teal)', margin: '0 auto' }}>
+                    <div style={{ position: 'absolute', right: '-5px', top: '-4px', width: 0, height: 0, borderLeft: '8px solid var(--teal)', borderTop: '5px solid transparent', borderBottom: '5px solid transparent' }} />
+                  </div>
+                </div>
+                {/* Flow: TSE → Providers */}
+                <div style={{ textAlign: 'center' }}>
+                  <div style={{ position: 'relative', width: '44px', height: '2px', background: '#1A2E4A', margin: '0 auto' }}>
+                    <div style={{ position: 'absolute', left: '-5px', top: '-4px', width: 0, height: 0, borderRight: '8px solid #1A2E4A', borderTop: '5px solid transparent', borderBottom: '5px solid transparent' }} />
+                  </div>
+                  <div style={{ fontSize: '10px', color: 'rgba(0,0,0,0.38)', lineHeight: 1.5, marginTop: '7px', letterSpacing: '0.02em' }}>
+                    Updates<br />Follow-through
+                  </div>
+                </div>
               </div>
-            </div>
-            <p className="diagram-caption">
+
+              {/* THE SEED EXCHANGE — center, taller */}
+              <div style={{
+                background: 'var(--teal)',
+                padding: '48px 40px',
+                display: 'flex',
+                flexDirection: 'column',
+              }}>
+                <div style={{
+                  fontSize: '10px',
+                  letterSpacing: '0.14em',
+                  textTransform: 'uppercase',
+                  color: 'rgba(255,255,255,0.48)',
+                  marginBottom: '14px',
+                }}>
+                  The Coordination Layer
+                </div>
+                <h4 style={{ color: 'var(--white)', fontSize: '21px', fontWeight: 700, marginBottom: '10px', lineHeight: 1.3 }}>
+                  The Seed Exchange
+                </h4>
+                <p style={{ color: 'rgba(255,255,255,0.68)', fontSize: '13px', lineHeight: 1.7, marginBottom: '28px' }}>
+                  The deliberate connection between what's available and what's actually reached.
+                </p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                  {[
+                    { label: 'Referral coordination', desc: 'Making sure handoffs land' },
+                    { label: 'Case navigation', desc: 'Following the person, not the form' },
+                    { label: 'Follow-through', desc: 'Staying until there is resolution' },
+                    { label: 'Case conferencing', desc: 'Multi-agency alignment on complex cases' },
+                    { label: 'System visibility', desc: 'Knowing what exists and who can reach it' },
+                    { label: 'Outcome reporting', desc: 'Measuring what actually happened' },
+                  ].map((item, i) => (
+                    <div key={i} style={{
+                      background: 'rgba(255,255,255,0.1)',
+                      padding: '11px 14px',
+                      borderLeft: '2px solid rgba(255,255,255,0.45)',
+                    }}>
+                      <div style={{ color: 'var(--white)', fontSize: '12px', fontWeight: 600, marginBottom: '2px' }}>
+                        {item.label}
+                      </div>
+                      <div style={{ color: 'rgba(255,255,255,0.6)', fontSize: '11px' }}>
+                        {item.desc}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* CONNECTOR: TSE ↔ People */}
+              <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                background: '#EEECEA',
+                gap: '28px',
+                padding: '20px 10px',
+              }}>
+                {/* Flow: TSE → People */}
+                <div style={{ textAlign: 'center' }}>
+                  <div style={{ fontSize: '10px', color: 'rgba(0,0,0,0.38)', lineHeight: 1.5, marginBottom: '7px', letterSpacing: '0.02em' }}>
+                    Navigation<br />Access
+                  </div>
+                  <div style={{ position: 'relative', width: '44px', height: '2px', background: 'var(--teal)', margin: '0 auto' }}>
+                    <div style={{ position: 'absolute', right: '-5px', top: '-4px', width: 0, height: 0, borderLeft: '8px solid var(--teal)', borderTop: '5px solid transparent', borderBottom: '5px solid transparent' }} />
+                  </div>
+                </div>
+                {/* Flow: People → TSE */}
+                <div style={{ textAlign: 'center' }}>
+                  <div style={{ position: 'relative', width: '44px', height: '2px', background: '#1A2E4A', margin: '0 auto' }}>
+                    <div style={{ position: 'absolute', left: '-5px', top: '-4px', width: 0, height: 0, borderRight: '8px solid #1A2E4A', borderTop: '5px solid transparent', borderBottom: '5px solid transparent' }} />
+                  </div>
+                  <div style={{ fontSize: '10px', color: 'rgba(0,0,0,0.38)', lineHeight: 1.5, marginTop: '7px', letterSpacing: '0.02em' }}>
+                    Needs<br />Context
+                  </div>
+                </div>
+              </div>
+
+              {/* PEOPLE SEEKING STABILITY */}
+              <div style={{
+                background: '#1A2E4A',
+                padding: '40px 36px',
+                display: 'flex',
+                flexDirection: 'column',
+              }}>
+                <div style={{
+                  fontSize: '10px',
+                  letterSpacing: '0.14em',
+                  textTransform: 'uppercase',
+                  color: 'rgba(255,255,255,0.38)',
+                  marginBottom: '14px',
+                }}>
+                  People Seeking Stability
+                </div>
+                <h4 style={{ color: 'var(--white)', fontSize: '19px', fontWeight: 600, marginBottom: '10px', lineHeight: 1.3 }}>
+                  Access &amp; Resolution
+                </h4>
+                <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '13px', lineHeight: 1.7, marginBottom: '28px' }}>
+                  The people the sector is built to serve — too often cycling through programs without finding solid ground.
+                </p>
+                <div style={{ borderTop: '1px solid rgba(255,255,255,0.08)', paddingTop: '20px', marginTop: 'auto' }}>
+                  {[
+                    'Individuals in housing crisis',
+                    'Complex households across systems',
+                    'People passed through without resolution',
+                    'Families navigating CoC pathways',
+                    'Those eligible for programs they cannot find',
+                  ].map((item, i) => (
+                    <div key={i} style={{
+                      fontSize: '12px',
+                      color: 'rgba(255,255,255,0.55)',
+                      padding: '8px 0',
+                      borderBottom: '1px solid rgba(255,255,255,0.05)',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '10px',
+                    }}>
+                      <span style={{ color: 'var(--teal)', fontSize: '8px', flexShrink: 0 }}>◆</span>
+                      {item}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+            </div>{/* end diagram grid */}
+
+            <p className="diagram-caption" style={{ textAlign: 'center', marginTop: '36px' }}>
               TSE is the coordination layer — not a program, not a competing service, but the deliberate connection between what exists and who needs it.
             </p>
           </div>

@@ -135,10 +135,9 @@ export default function Contact() {
           No agenda beyond figuring out whether TSE belongs in what you're building —
           or can help you find your way through.
         </p>
-        <div style={{ maxWidth: '900px', margin: '0 auto', width: '100%' }}>
+        <div className="calendly-embed-wrap">
           <iframe
             src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3TyleaNRyAFgI-gYzCoRvJjeknpgzzYj0Yfu6wqwE9gJsjQRN5tx-eWyoU5JkoEHSb3TI0fDd5?gv=true"
-            style={{ border: 0, width: '100%', minHeight: '650px', borderRadius: '4px' }}
             frameBorder="0"
             title="Book a discovery call with TSE"
           />

@@ -1123,14 +1123,31 @@ p {
 
 .calendly-block {
   background: #1A2E4A;
-  padding: 72px 64px;
+  padding: 80px 64px;
   text-align: center;
   margin: 0;
   border-top: 3px solid var(--teal);
 }
 .calendly-block h3 { color: var(--white); margin-bottom: 16px; font-size: clamp(24px, 2.5vw, 36px); }
-.calendly-block .sub { color: rgba(255,255,255,0.75); margin-bottom: 40px; max-width: 520px; margin-left: auto; margin-right: auto; }
-/* REPLACE: Embed actual Calendly widget here */
+.calendly-block .sub { color: rgba(255,255,255,0.75); margin-bottom: 48px; max-width: 520px; margin-left: auto; margin-right: auto; }
+.calendly-block .eyebrow { color: rgba(255,255,255,0.4); }
+
+/* Calendar embed — white card deliberately lifted from navy */
+.calendly-embed-wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-top: 3px solid var(--teal);
+  box-shadow: 0 32px 96px rgba(0, 0, 0, 0.35), 0 8px 24px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.calendly-embed-wrap iframe {
+  display: block;
+  width: 100%;
+  min-height: 660px;
+  border: none;
+}
+
 .calendly-embed {
   background: rgba(255,255,255,0.04);
   border: 1px dashed rgba(255,255,255,0.12);

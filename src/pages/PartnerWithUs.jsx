@@ -454,30 +454,24 @@ export default function PartnerWithUs() {
       {/* ============================================================
           CALENDLY / DISCOVERY CALL
       ============================================================ */}
-      <section className="section" aria-label="Book a discovery call">
-        <div className="container">
-          <div className="calendly-block">
-            <span className="eyebrow" style={{ color: 'rgba(255,255,255,0.35)' }}>
-              30 minutes. No pitch.
-            </span>
-            <h3>Book a discovery call.</h3>
-            <p className="sub">
-              Not sure if this is the right fit? Start with a 30-minute discovery call.
-              No pitch. Just a real conversation about what you're building and
-              whether TSE belongs in it.
-            </p>
-
-            <div style={{ width: '100%', overflowX: 'auto', marginTop: '8px' }}>
-              <iframe
-                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3TyleaNRyAFgI-gYzCoRvJjeknpgzzYj0Yfu6wqwE9gJsjQRN5tx-eWyoU5JkoEHSb3TI0fDd5?gv=true"
-                style={{ border: 0, width: '100%', minHeight: '600px' }}
-                frameBorder="0"
-                title="Book a discovery call with TSE"
-              />
-            </div>
-          </div>
+      <div className="calendly-block" aria-label="Book a discovery call">
+        <span className="eyebrow">
+          30 minutes. No pitch.
+        </span>
+        <h3>Book a discovery call.</h3>
+        <p className="sub">
+          Not sure if this is the right fit? Start with a 30-minute discovery call.
+          No pitch. Just a real conversation about what you're building and
+          whether TSE belongs in it.
+        </p>
+        <div className="calendly-embed-wrap">
+          <iframe
+            src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3TyleaNRyAFgI-gYzCoRvJjeknpgzzYj0Yfu6wqwE9gJsjQRN5tx-eWyoU5JkoEHSb3TI0fDd5?gv=true"
+            frameBorder="0"
+            title="Book a discovery call with TSE"
+          />
         </div>
-      </section>
+      </div>
 
       {/* ============================================================
           INQUIRY FORM

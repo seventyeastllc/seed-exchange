@@ -61,8 +61,8 @@ export default function Navigation() {
             ))}
           </div>
 
-          <Link to="/contact" className="btn btn-primary nav-desktop-cta">
-            Book a Call
+          <Link to="/partner" className="btn btn-primary nav-desktop-cta">
+            Start an Inquiry
           </Link>
 
           <button
@@ -93,8 +93,8 @@ export default function Navigation() {
           </Link>
         ))}
         <div className="nav-mobile-cta">
-          <Link to="/contact" className="btn btn-primary">
-            Book a Call
+          <Link to="/partner" className="btn btn-primary">
+            Start an Inquiry
           </Link>
         </div>
       </div>

@@ -32,24 +32,30 @@ export default function HowWeWork() {
           <span className="eyebrow" style={{ color: 'rgba(255,255,255,0.35)' }}>
             For service providers
           </span>
-          <h3>Your services. Extended further.</h3>
+          <h3>Your hardest cases. Navigated.</h3>
           <p style={{ color: 'rgba(255,255,255,0.65)', marginBottom: '8px', fontSize: '16px', lineHeight: 1.75 }}>
-            TSE partners with your organization to strengthen the coordination layer —
-            so your services reach the people they were designed to reach, and complex cases
-            don't fall apart between departments, agencies, or intake windows.
+            Your program does what it's designed to do. TSE handles what happens in between
+            — the clients who need more follow-through than your team has capacity for, the
+            cases that touch multiple agencies with no single point of ownership, the people
+            who keep falling through the space between referral and resolution.
+          </p>
+          <p style={{ color: 'rgba(255,255,255,0.65)', marginBottom: '8px', fontSize: '16px', lineHeight: 1.75 }}>
+            TSE takes your highest-barrier clients and navigates alongside them — so your
+            staff can do their work at a higher level, and your program's outcomes actually
+            reflect what your services are capable of.
           </p>
 
           <ul className="audience-list" role="list">
-            <li>Referral coordination and tracking — from first contact through resolution</li>
-            <li>Case conferencing support on complex, multi-system cases</li>
-            <li>System visibility into where cases pause — and what it takes to reach resolution</li>
-            <li>Outcome reporting alignment so your data tells the right story</li>
-            <li>Navigation support for clients who are difficult to reach or serve</li>
+            <li>Navigation support for your highest-barrier clients — from referral to resolution</li>
+            <li>Follow-through on cases that have touched multiple programs without resolving</li>
+            <li>Case conferencing support on complex, multi-system situations</li>
+            <li>System visibility into what's pausing cases and what it takes to reach resolution</li>
+            <li>Outcome reporting alignment so your data reflects what's actually happening</li>
           </ul>
 
           <p style={{ color: 'rgba(255,255,255,0.55)', fontSize: '15px', fontStyle: 'italic', lineHeight: 1.7, marginTop: '8px' }}>
-            TSE does not duplicate your services. It works in the space between your
-            services and the people they were designed to reach.
+            TSE does not duplicate your services. It handles the navigation your services were
+            never designed to carry alone.
           </p>
 
           <div style={{ marginTop: '40px', display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
@@ -65,23 +71,30 @@ export default function HowWeWork() {
         {/* Community side */}
         <div className="audience-pane audience-pane--community">
           <span className="eyebrow">For individuals &amp; families</span>
-          <h3>You already know what you need. TSE helps you get there.</h3>
+          <h3>You've been doing this alone long enough.</h3>
           <p style={{ color: 'var(--body)', marginBottom: '8px', fontSize: '16px', lineHeight: 1.75 }}>
-            If you are navigating housing instability — or if you've been navigating it
-            for a while without finding solid ground — TSE connects people to support
-            they qualify for, including programs and resources they may not know exist.
+            Navigating a housing crisis is hard enough. Navigating it while managing a family
+            member's disability, a health condition, a complex history with programs that didn't
+            work — that's a different situation. It requires someone who knows the programs,
+            knows how to get in the door, and will stay on it until something actually resolves.
+          </p>
+          <p style={{ color: 'var(--body)', marginBottom: '8px', fontSize: '16px', lineHeight: 1.75 }}>
+            TSE navigates for families and individuals with complex barriers to stability —
+            people whose situations require more than a referral and a phone number. If your
+            case manager has referred you to TSE, or if you're a provider looking to refer a
+            client, here's what that looks like.
           </p>
 
           <ul className="audience-list" role="list">
-            <li>Connection to housing programs, benefits, and services you may qualify for</li>
-            <li>Someone who follows through — not just a referral, but an actual next step</li>
-            <li>Navigation through processes that are easier with someone who knows the path</li>
+            <li>Someone who stays with your case — not just a referral, but actual follow-through</li>
+            <li>Navigation through programs and application processes that are easier with someone who knows the path</li>
+            <li>Connection to supports you may qualify for that haven't been identified yet</li>
             <li>Community through The Bridge — people who have walked this road and want to share what they know</li>
           </ul>
 
           <p style={{ color: 'var(--body)', opacity: 0.65, fontSize: '15px', fontStyle: 'italic', lineHeight: 1.7, marginTop: '8px' }}>
-            The Bridge is not a hotline. It is not an intake form. It is a community
-            — people who have been here, found their way through, and want to light the path for someone else.
+            TSE works alongside your existing team — your case manager, your provider, your
+            program. We are the navigation layer, not a replacement for the services already in place.
           </p>
 
           <div style={{ marginTop: '40px', display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
@@ -150,7 +163,7 @@ export default function HowWeWork() {
 
           <div style={{ textAlign: 'center', marginTop: '60px' }}>
             <Link to="/partner" className="btn btn-primary btn-lg">
-              Book a Discovery Call
+              Start an Inquiry
             </Link>
           </div>
         </div>
@@ -180,7 +193,7 @@ export default function HowWeWork() {
                   is: 'A coordination partner that supports case managers and the cases they carry',
                 },
                 {
-                  isNot: 'A replacement for HMIS or Coordinated Entry',
+                  isNot: 'A replacement for existing intake and assessment systems',
                   is: 'A complement to those systems — with follow-through where the data trail ends',
                 },
                 {

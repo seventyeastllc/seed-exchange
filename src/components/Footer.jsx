@@ -33,7 +33,7 @@ const NAV_LINKS = [
   { to: '/community', label: 'Community' },
   { to: '/lattice', label: 'Lattice' },
   { to: '/roundtables', label: 'Roundtables' },
-  { to: '/contact', label: 'Book a Call' },
+  { to: '/partner', label: 'Start an Inquiry' },
 ]
 
 export default function Footer() {
@@ -98,7 +98,7 @@ export default function Footer() {
             <p className="footer-col-head">Connect</p>
             <div className="footer-col-links">
               <Link to="/partner">Partner With Us</Link>
-              <Link to="/contact">Book a Discovery Call</Link>
+              <Link to="/partner">Start an Inquiry</Link>
               <a href="https://www.facebook.com/profile.php?id=61578142387617" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
               <a href="https://www.instagram.com/seedxga" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
               <a href="https://substack.com/@theseedexchangega" target="_blank" rel="noopener noreferrer">Substack ↗</a>

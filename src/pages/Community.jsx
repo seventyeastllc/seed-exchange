@@ -207,10 +207,10 @@ export default function Community() {
             </p>
             <p style={{ fontSize: '17px', lineHeight: 1.78, marginBottom: '22px' }}>
               Topics come from the community — what referral flows are breaking down,
-              which CoC pathways are moving and which aren't, what's changed with
-              eligibility windows, where complex households keep hitting barriers.
-              The goal is not to report on the problem. It is to solve it, together,
-              in real time, with the people who are closest to it.
+              what's shifted in eligibility windows, where complex households keep hitting
+              barriers, and what the FY2026 NOFO means for the organizations in the room
+              trying to navigate it. The goal is not to report on the problem. It is to
+              solve it, together, in real time, with the people who are closest to it.
             </p>
             <p style={{ fontSize: '17px', lineHeight: 1.78, marginBottom: '36px' }}>
               Garden Meeting dates are posted inside the group. Join to stay in the loop.
@@ -242,8 +242,8 @@ export default function Community() {
             <Link to="/partner" className="btn btn-primary">
               Partner With Us
             </Link>
-            <Link to="/contact" className="btn btn-outline">
-              Book a Call
+            <Link to="/partner" className="btn btn-outline">
+              Start an Inquiry
             </Link>
           </div>
         </div>

@@ -118,13 +118,22 @@ export default function PartnerWithUs() {
       <section className="page-hero" style={{ minHeight: '60vh' }} aria-label="Partner with TSE">
         <div className="page-hero-content">
           <span className="eyebrow" style={{ color: 'var(--teal)' }}>
-            Georgia DCA Housing Navigation NOFO — July 2026
+            FY2026 CoC NOFO — August 26, 2026 Application Deadline
           </span>
-          <h1>Georgia is funding<br />housing navigation.</h1>
+          <h1>HUD just released<br />the FY2026 CoC NOFO.</h1>
           <p>
-            Organizations receiving this funding are expected to have a qualified
-            coordination partner — not just referral systems, not just case managers.
-            TSE is that partner. Applications are due July 2026.
+            HUD released the FY2026 Continuum of Care NOFO on June 1, 2026.
+            Applications are due August 26, 2026. TSE is accepting navigator
+            partnership inquiries now — for organizations building or expanding
+            housing navigation capacity before the deadline.{' '}
+            <a
+              href="https://www.hud.gov/hud-partners/community-coc"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: 'var(--teal)', textDecoration: 'underline', textUnderlineOffset: '3px' }}
+            >
+              View the NOFO on HUD Exchange ↗
+            </a>
           </p>
         </div>
       </section>
@@ -137,11 +146,11 @@ export default function PartnerWithUs() {
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '96px', alignItems: 'start' }}>
             <div>
               <span className="eyebrow">The opportunity</span>
-              <h2 style={{ marginBottom: '28px' }}>Georgia is funding housing navigation.</h2>
+              <h2 style={{ marginBottom: '28px' }}>The FY2026 CoC NOFO is open.</h2>
               <p className="partner-lead" style={{ marginBottom: '24px' }}>
-                Georgia's Department of Community Affairs has released a{' '}
+                HUD released the{' '}
                 <a
-                  href="https://dca.georgia.gov/affordable-housing/special-needs-housing/housing-navigation-program"
+                  href="https://www.hud.gov/hud-partners/community-coc"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -153,23 +162,23 @@ export default function PartnerWithUs() {
                     WebkitBoxDecorationBreak: 'clone',
                   }}
                 >
-                  Housing Navigation
+                  FY2026 Continuum of Care NOFO
                 </a>
-                {' '}funding opportunity — and organizations receiving this funding are expected
-                to have qualified coordination partners. Not just referral systems. Not just
-                case managers. Partners who can demonstrate the navigation capacity to serve
-                the populations the funding is designed to reach.
+                {' '}on June 1, 2026. Applications are due August 26, 2026. Organizations
+                pursuing or preparing CoC funding are expected to demonstrate qualified
+                coordination capacity — not just referral systems, not just case managers.
+                Partners who can show the navigation infrastructure to serve the populations
+                the funding is designed to reach.
               </p>
               <p style={{ fontSize: '17px', lineHeight: 1.78, marginBottom: '24px' }}>
-                TSE is that partner. Grounded in a legacy navigation program model, with the
+                TSE is that partner. Built on a legacy navigation program model, with the
                 relationships, documented approach, and coordination capacity to make your
                 housing navigation work perform — not just comply.
               </p>
               <p style={{ fontSize: '17px', lineHeight: 1.78 }}>
-                The application period has closed — awards were announced May 4, 2026, with
-                a required implementation date of July 1, 2026. If your organization was
-                funded and is now building out your housing navigation program, TSE is ready
-                to partner from day one.
+                For organizations funded under Georgia DCA's Housing Navigation program with
+                a July 1, 2026 implementation date — TSE is also ready to partner from day
+                one on that work.
               </p>
             </div>
 
@@ -203,8 +212,8 @@ export default function PartnerWithUs() {
               ))}
 
               <div style={{ marginTop: '40px' }}>
-                <Link to="/contact" className="btn btn-primary" style={{ width: '100%' }}>
-                  Book a Discovery Call
+                <Link to="/partner" className="btn btn-primary" style={{ width: '100%' }}>
+                  Start an Inquiry
                 </Link>
               </div>
             </div>
@@ -236,9 +245,9 @@ export default function PartnerWithUs() {
               <div className="package-name-block">
                 <div className="package-name">Housing Navigator Partnership</div>
                 <p className="package-sub">
-                  Grounded in TSE's legacy program model. Designed for organizations
-                  entering or expanding housing navigation work. TSE is a coordination partner —
-                  not an employee, not a vendor. Capacity that's already in place, already working.
+                  TSE navigates directly for your highest-barrier clients — from first contact
+                  through resolution, across programs, systems, and agencies. Contracted
+                  coordination capacity for organizations with housing navigation responsibilities.
                 </p>
               </div>
             </div>
@@ -255,7 +264,7 @@ export default function PartnerWithUs() {
                 Internal case conferencing support — TSE participates, facilitates, or both
               </li>
               <li className="package-item">
-                System visibility and documentation — barriers, paused cases, eligibility complexity
+                System visibility and documentation — barriers, paused cases, what's required to reach resolution
               </li>
               <li className="package-item">
                 Outcome reporting alignment so your data reflects what's actually happening
@@ -268,41 +277,85 @@ export default function PartnerWithUs() {
             </p>
           </div>
 
-          {/* Entry-level pilot tier */}
-          <div style={{
-            marginTop: '32px',
-            background: 'var(--light-bg)',
-            border: '1px solid rgba(42,175,169,0.25)',
-            padding: '40px 48px',
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
-            gap: '48px',
-            alignItems: 'center',
-          }}>
-            <div>
-              <span className="eyebrow" style={{ color: 'var(--teal)', marginBottom: '12px' }}>
-                Entry point · Limited availability
-              </span>
+          {/* Entry-level pilot tiers */}
+          <div style={{ marginTop: '32px', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
+            {/* Navigator Coaching Pilot */}
+            <div style={{
+              background: 'var(--light-bg)',
+              border: '1px solid rgba(42,175,169,0.25)',
+              padding: '40px 48px',
+            }}>
+              <div style={{
+                display: 'inline-block',
+                background: 'var(--teal)',
+                color: 'var(--white)',
+                fontSize: '11px',
+                fontWeight: 700,
+                letterSpacing: '0.1em',
+                textTransform: 'uppercase',
+                padding: '4px 10px',
+                marginBottom: '16px',
+              }}>
+                New · Limited Slots
+              </div>
+              <h3 style={{ fontFamily: 'var(--font-serif)', fontWeight: 400, marginBottom: '16px', color: 'var(--dark)' }}>
+                Navigator Coaching Pilot
+              </h3>
+              <p style={{ fontSize: '16px', lineHeight: 1.78, color: 'var(--body)', marginBottom: '28px' }}>
+                A 30-day coaching engagement for housing navigators and case managers —
+                focused on the specific cases and coordination challenges your team is
+                actively carrying. TSE works alongside your staff on up to 5 client
+                situations to build coordination capacity from the inside.
+              </p>
+              <div style={{ fontFamily: 'var(--font-serif)', fontSize: '40px', fontWeight: 300, color: 'var(--dark)', lineHeight: 1, marginBottom: '6px' }}>
+                $897
+              </div>
+              <div style={{ fontSize: '14px', color: 'var(--body)', opacity: 0.65, marginBottom: '24px' }}>
+                30-day engagement · up to 5 clients
+              </div>
+              <Link to="/partner" className="btn btn-outline-teal">
+                Ask About Availability →
+              </Link>
+            </div>
+
+            {/* 60-Day Coordination Pilot */}
+            <div style={{
+              background: 'var(--light-bg)',
+              border: '1px solid rgba(42,175,169,0.25)',
+              padding: '40px 48px',
+            }}>
+              <div style={{
+                display: 'inline-block',
+                background: 'rgba(42,175,169,0.12)',
+                color: 'var(--teal)',
+                fontSize: '11px',
+                fontWeight: 700,
+                letterSpacing: '0.1em',
+                textTransform: 'uppercase',
+                padding: '4px 10px',
+                marginBottom: '16px',
+                border: '1px solid rgba(42,175,169,0.3)',
+              }}>
+                Entry Point · Limited Availability
+              </div>
               <h3 style={{ fontFamily: 'var(--font-serif)', fontWeight: 400, marginBottom: '16px', color: 'var(--dark)' }}>
                 60-Day Coordination Pilot
               </h3>
-              <p style={{ fontSize: '16px', lineHeight: 1.78, color: 'var(--body)', marginBottom: '0' }}>
+              <p style={{ fontSize: '16px', lineHeight: 1.78, color: 'var(--body)', marginBottom: '28px' }}>
                 Not ready to commit to a full partnership? The 60-Day Pilot is a
                 lower-commitment entry point — the same coordination model, the same
                 follow-through, scoped for two months. It is how some organizations
                 get started before formalizing. Slots are limited.
               </p>
-            </div>
-            <div style={{ textAlign: 'center' }}>
-              <div style={{ fontFamily: 'var(--font-serif)', fontSize: '48px', fontWeight: 300, color: 'var(--dark)', lineHeight: 1 }}>
+              <div style={{ fontFamily: 'var(--font-serif)', fontSize: '40px', fontWeight: 300, color: 'var(--dark)', lineHeight: 1, marginBottom: '6px' }}>
                 $897
               </div>
-              <div style={{ fontSize: '14px', color: 'var(--body)', opacity: 0.65, marginBottom: '28px', marginTop: '6px' }}>
+              <div style={{ fontSize: '14px', color: 'var(--body)', opacity: 0.65, marginBottom: '24px' }}>
                 per month · 60-day commitment
               </div>
-              <a href="/contact" className="btn btn-outline-teal">
+              <Link to="/partner" className="btn btn-outline-teal">
                 Ask About Availability →
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -397,19 +450,19 @@ export default function PartnerWithUs() {
             <article className="why-item reveal">
               <h4>Lived expertise, not just credentialed expertise</h4>
               <p>
-                TSE brings proximity — to the populations, to the system, and to the
-                space between them. This team has navigated these systems from the inside:
-                as case managers, as Coordinated Entry specialists, as the person still
-                working the case after everyone else moved on. That is not a talking point.
-                It is the foundation of how TSE operates.
+                TSE brings proximity — to the populations, to the programs, and to the
+                space between them. This practice was built from the inside of the work:
+                as a direct practitioner, as a caregiver navigating the same systems,
+                and as the person who stayed on the case long past the point where anyone
+                expected them to.
               </p>
             </article>
             <article className="why-item reveal reveal-delay-2">
               <h4>A partner, not overhead</h4>
               <p>
-                TSE is not a W-2 employee. It is a coordination partner that brings
-                its own model, its own documentation systems, and its own follow-through
-                practices. You get real capacity without adding headcount.
+                TSE is a coordination partner that brings its own model, its own
+                documentation systems, and its own follow-through practices. You get
+                real capacity without adding headcount.
               </p>
             </article>
             <article className="why-item reveal reveal-delay-4">
@@ -441,7 +494,7 @@ export default function PartnerWithUs() {
             </div>
             {/* TODO: Upload completed TSE-Capability-Statement.pdf to /public to enable download */}
             <a
-              href="/contact"
+              href="/partner#inquiry-form"
               className="btn btn-primary btn-lg"
               aria-label="Request TSE Capability Statement"
             >
@@ -452,31 +505,27 @@ export default function PartnerWithUs() {
       </section>
 
       {/* ============================================================
-          CALENDLY / DISCOVERY CALL
+          START WITH AN INQUIRY
       ============================================================ */}
-      <div className="calendly-block" aria-label="Book a discovery call">
+      <div className="calendly-block" aria-label="Start with an inquiry">
         <span className="eyebrow">
-          30 minutes. No pitch.
+          The next step
         </span>
-        <h3>Book a discovery call.</h3>
+        <h3>Start with an inquiry.</h3>
         <p className="sub">
-          Not sure if this is the right fit? Start with a 30-minute discovery call.
-          No pitch. Just a real conversation about what you're building and
-          whether TSE belongs in it.
+          Not sure if this is the right fit? Fill out the inquiry form below
+          and TSE will be in touch within 2–3 business days. The more context
+          you share, the better the conversation will be.
         </p>
-        <div className="calendly-embed-wrap">
-          <iframe
-            src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3TyleaNRyAFgI-gYzCoRvJjeknpgzzYj0Yfu6wqwE9gJsjQRN5tx-eWyoU5JkoEHSb3TI0fDd5?gv=true"
-            frameBorder="0"
-            title="Book a discovery call with TSE"
-          />
-        </div>
+        <a href="#inquiry-form" className="btn btn-primary btn-lg" style={{ marginTop: '8px' }}>
+          Go to Inquiry Form →
+        </a>
       </div>
 
       {/* ============================================================
           INQUIRY FORM
       ============================================================ */}
-      <section className="section section--light" aria-label="Partnership inquiry form">
+      <section id="inquiry-form" className="section section--light" aria-label="Partnership inquiry form">
         <div className="container">
           <div className="inquiry-form-wrap">
             <span className="eyebrow">Tell us about your organization</span>

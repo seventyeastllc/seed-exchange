@@ -11,23 +11,32 @@ const ANNOUNCEMENTS = [
   {
     id: 1,
     active: true,
-    message: 'Housing Navigation NOFO awards have been announced — implementation begins July 1, 2026. If your organization was funded, TSE is ready to partner now.',
-    link: 'https://dca.georgia.gov/affordable-housing/special-needs-housing/housing-navigation-program',
-    linkLabel: 'Learn more',
+    eyebrow: 'FY2026 CoC NOFO — Now Open',
+    message: 'HUD released the FY2026 Continuum of Care NOFO on June 1, 2026. Applications are due August 26, 2026. TSE is accepting navigator partnership inquiries now.',
+    link: 'https://www.hud.gov/hud-partners/community-coc',
+    linkLabel: 'View NOFO on HUD Exchange',
+    secondaryLink: '/partner',
+    secondaryLinkLabel: 'Partner With Us',
   },
   {
     id: 2,
     active: false,
-    message: 'New Roundtable coming soon — join the Community Garden to be first to know when it\'s announced.',
+    eyebrow: null,
+    message: 'New Field Table session coming soon — join the Community Garden to be first to know when it\'s announced.',
     link: null,
     linkLabel: null,
+    secondaryLink: null,
+    secondaryLinkLabel: null,
   },
   {
     id: 3,
     active: false,
+    eyebrow: null,
     message: 'Lattice founding member interest is now open. Limited spots available for fall 2026 launch.',
     link: null,
     linkLabel: null,
+    secondaryLink: null,
+    secondaryLinkLabel: null,
   },
 ]
 
@@ -105,6 +114,11 @@ export default function AnnouncementBanner() {
         transition: 'opacity 0.22s ease',
         letterSpacing: '0.01em',
       }}>
+        {item.eyebrow && (
+          <span style={{ fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', fontSize: '11px', color: 'rgba(255,255,255,0.7)', marginRight: '10px' }}>
+            {item.eyebrow} ·
+          </span>
+        )}
         {item.message}
         {item.link && (
           <a
@@ -123,6 +137,11 @@ export default function AnnouncementBanner() {
             }}
           >
             {item.linkLabel} ↗
+          </a>
+        )}
+        {item.secondaryLink && (
+          <a href={item.secondaryLink} style={{ color: 'rgba(255,255,255,0.7)', marginLeft: '14px', textDecoration: 'underline', textUnderlineOffset: '2px', fontSize: '12px', fontWeight: 500, letterSpacing: '0.04em', textTransform: 'uppercase' }}>
+            {item.secondaryLinkLabel} →
           </a>
         )}
       </p>

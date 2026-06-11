@@ -286,8 +286,8 @@ export default function Home() {
             <Link to="/partner" className="btn btn-outline">
               Partner With Us
             </Link>
-            <Link to="/contact" className="btn btn-white">
-              Book a Call
+            <Link to="/partner" className="btn btn-white">
+              Start an Inquiry
             </Link>
           </div>
         </div>

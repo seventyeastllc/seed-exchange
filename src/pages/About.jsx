@@ -206,9 +206,9 @@ export default function About() {
             <span className="eyebrow">The role</span>
             <h2>Connective tissue, not competition.</h2>
             <p>
-              TSE is not a case management organization. It is not a replacement for
-              HMIS or Coordinated Entry. It is the coordination layer that makes
-              existing systems reach the people they were built for.
+              TSE is not a case management organization. It is not a replacement for existing
+              intake and assessment systems. It is the navigation layer that makes what already
+              exists reach the people it was built for.
             </p>
           </div>
 
@@ -457,7 +457,7 @@ export default function About() {
             </div>{/* end diagram grid */}
 
             <p className="diagram-caption" style={{ textAlign: 'center', marginTop: '36px' }}>
-              TSE is the coordination layer — not a program, not a competing service, but the deliberate connection between what exists and who needs it.
+              TSE is the navigation layer — not a program, not a competing service, but the deliberate connection between what exists and who needs it.
             </p>
           </div>
         </div>

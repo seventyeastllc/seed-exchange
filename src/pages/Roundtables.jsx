@@ -24,18 +24,43 @@ const UPCOMING_EVENTS = [
 const PAST_EVENTS = [
   {
     id: 1,
+    date: 'Jul 2026',
+    title: 'FY2026 CoC NOFO: What Applications Due August 26 Actually Require',
+    topic: 'NOFO implementation',
+    upcoming: true,
+  },
+  {
+    id: 2,
+    date: 'May 2026',
+    title: 'Provider Capacity and Burnout: The Coordination Cost Nobody Is Measuring',
+    topic: 'Sector health',
+  },
+  {
+    id: 3,
+    date: 'Apr 2026',
+    title: 'When Case Management Ends and Coordination Needs to Continue',
+    topic: 'Handoff & follow-through',
+  },
+  {
+    id: 4,
+    date: 'Mar 2026',
+    title: 'Elderly and Disabled Populations: Navigation Beyond Standard Pathways',
+    topic: 'Priority populations',
+  },
+  {
+    id: 5,
     date: 'Feb 2026',
     title: "Navigating Complex Households: When One System Isn't Enough",
     topic: 'Case complexity',
   },
   {
-    id: 2,
+    id: 6,
     date: 'Jan 2026',
     title: 'CoC Navigation 101: What Providers Need to Know',
     topic: 'CoC systems',
   },
   {
-    id: 3,
+    id: 7,
     date: 'Dec 2025',
     title: 'Data Quality in Housing Navigation: What the Numbers Miss',
     topic: 'Data & reporting',
@@ -98,7 +123,7 @@ export default function Roundtables() {
               </p>
 
               <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', marginTop: '36px' }}>
-                <Link to="/contact" className="btn btn-primary">
+                <Link to="/partner" className="btn btn-primary">
                   Reach Out About The Field Table
                 </Link>
                 <a href="https://www.facebook.com/share/g/17aSVDX53z/" className="btn btn-outline-dark" target="_blank" rel="noopener noreferrer">
@@ -145,16 +170,18 @@ export default function Roundtables() {
           <div ref={eventsRef} className="events-grid">
             {UPCOMING_EVENTS.length === 0 ? (
               <div className="events-empty">
-                <h4>No sessions on the calendar right now — but dates get posted fast when they do.</h4>
+                <h4>The next Field Table session is coming.</h4>
                 <p style={{ marginBottom: '32px' }}>
-                  Join the Community Garden or send us your email to be first to know.
+                  Topics come from the field, and right now the field has no shortage of material.
+                  Join the Community Garden or drop your email below to be first to know when
+                  the next date is posted.
                 </p>
                 <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap' }}>
                   <a href="https://www.facebook.com/share/g/17aSVDX53z/" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
                     Join the Community Garden
                   </a>
-                  <Link to="/contact" className="btn btn-outline-dark">
-                    Notify Me
+                  <Link to="/partner" className="btn btn-outline-dark">
+                    Start an Inquiry
                   </Link>
                 </div>
               </div>
@@ -215,10 +242,21 @@ export default function Roundtables() {
 
             <div className="past-events-list">
               {PAST_EVENTS.map((event) => (
-                <div key={event.id} className="past-event-item">
+                <div key={event.id} className="past-event-item" style={event.upcoming ? { borderLeft: '3px solid var(--teal)', paddingLeft: '16px' } : {}}>
                   <span className="past-event-date">{event.date}</span>
                   <h4 className="past-event-title">{event.title}</h4>
-                  <span className="past-event-tag">{event.topic}</span>
+                  <div style={{ display: 'flex', gap: '10px', alignItems: 'center', flexWrap: 'wrap' }}>
+                    <span className="past-event-tag">{event.topic}</span>
+                    {event.upcoming && (
+                      <span style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--teal)' }}>
+                        Upcoming — Join the{' '}
+                        <a href="https://www.facebook.com/share/g/17aSVDX53z/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--teal)', textDecoration: 'underline', textUnderlineOffset: '2px' }}>
+                          Community Garden
+                        </a>
+                        {' '}to be notified
+                      </span>
+                    )}
+                  </div>
                 </div>
               ))}
             </div>
@@ -249,7 +287,7 @@ export default function Roundtables() {
                 the right focus, design the right conversation structure, and facilitate
                 in a way that leaves your team with something usable — not just a debrief.
               </p>
-              <Link to="/contact" className="btn btn-primary">
+              <Link to="/partner" className="btn btn-primary">
                 Reach Out About Facilitation
               </Link>
             </div>

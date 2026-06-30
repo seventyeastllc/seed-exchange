@@ -103,10 +103,9 @@ export default function MaintenancePopup() {
           color: 'rgba(255,255,255,0.72)',
           marginBottom: '12px',
         }}>
-          We're in the middle of a full rebrand — and we're doing it right.
-          New look. Same work. Same commitment. The Seed Exchange is still very
-          much here, we're just getting our house in order before we open
-          the front door wide.
+          We're taking a brief pause to tend to a few things behind the scenes.
+          We'll be back on July 6. Until then, thank you for your patience —
+          we're looking forward to seeing you again.
         </p>
 
         <p style={{
@@ -115,8 +114,7 @@ export default function MaintenancePopup() {
           color: 'rgba(255,255,255,0.72)',
           marginBottom: '32px',
         }}>
-          If you need to connect before then — don't wait.
-          Reach us at{' '}
+          Need to reach us before then? We're still here.{' '}
           <a
             href={`mailto:${CONTACT_EMAIL}`}
             style={{
@@ -127,7 +125,7 @@ export default function MaintenancePopup() {
           >
             {CONTACT_EMAIL}
           </a>
-          {' '}or use the form below.
+          {' '}or send us a message below.
         </p>
 
         {/* CTAs */}

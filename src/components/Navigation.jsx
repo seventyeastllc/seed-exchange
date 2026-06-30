@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { MAINTENANCE_MODE } from '../maintenance.js'
 
 const NAV_LINKS = [
   { to: '/', label: 'Home' },
@@ -39,6 +40,7 @@ export default function Navigation() {
     <>
       <nav className={`nav ${solid ? 'nav--solid' : 'nav--transparent'}`} role="navigation" aria-label="Main navigation">
         <div className="nav-inner">
+          {/* Logo — always links home */}
           <Link to="/" className="nav-logo" aria-label="The Seed Exchange — Home">
             <div className="nav-logo-img-wrap">
               <img src="/logo-icon.png" alt="The Seed Exchange" className="nav-logo-img" />
@@ -48,22 +50,43 @@ export default function Navigation() {
             </span>
           </Link>
 
+          {/* Desktop nav links */}
           <div className="nav-links" role="list">
-            {NAV_LINKS.map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
-                role="listitem"
-                className={`nav-link ${location.pathname === link.to ? 'active' : ''}`}
-              >
-                {link.label}
-              </Link>
-            ))}
+            {NAV_LINKS.map((link) =>
+              MAINTENANCE_MODE ? (
+                /* Titles visible, not clickable */
+                <span
+                  key={link.to}
+                  role="listitem"
+                  className="nav-link"
+                  style={{ cursor: 'default', opacity: 0.5, pointerEvents: 'none' }}
+                  aria-disabled="true"
+                >
+                  {link.label}
+                </span>
+              ) : (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  role="listitem"
+                  className={`nav-link ${location.pathname === link.to ? 'active' : ''}`}
+                >
+                  {link.label}
+                </Link>
+              )
+            )}
           </div>
 
-          <Link to="/partner" className="btn btn-primary nav-desktop-cta">
-            Start an Inquiry
-          </Link>
+          {/* Desktop CTA */}
+          {MAINTENANCE_MODE ? (
+            <Link to="/contact" className="btn btn-primary nav-desktop-cta">
+              Learn More
+            </Link>
+          ) : (
+            <Link to="/partner" className="btn btn-primary nav-desktop-cta">
+              Start an Inquiry
+            </Link>
+          )}
 
           <button
             className={`nav-toggle ${menuOpen ? 'open' : ''}`}
@@ -78,24 +101,44 @@ export default function Navigation() {
         </div>
       </nav>
 
+      {/* Mobile drawer */}
       <div className={`nav-mobile ${menuOpen ? 'open' : ''}`} role="dialog" aria-modal="true" aria-label="Mobile navigation">
         <div className="nav-mobile-brand">
           <img src="/logo-icon.png" alt="The Seed Exchange" className="nav-logo-img" />
           <span className="nav-logo-text">The Seed <em>Exchange</em></span>
         </div>
-        {NAV_LINKS.map((link) => (
-          <Link
-            key={link.to}
-            to={link.to}
-            className={`nav-link ${location.pathname === link.to ? 'active' : ''}`}
-          >
-            {link.label}
-          </Link>
-        ))}
+
+        {NAV_LINKS.map((link) =>
+          MAINTENANCE_MODE ? (
+            <span
+              key={link.to}
+              className="nav-link"
+              style={{ cursor: 'default', opacity: 0.5, pointerEvents: 'none' }}
+              aria-disabled="true"
+            >
+              {link.label}
+            </span>
+          ) : (
+            <Link
+              key={link.to}
+              to={link.to}
+              className={`nav-link ${location.pathname === link.to ? 'active' : ''}`}
+            >
+              {link.label}
+            </Link>
+          )
+        )}
+
         <div className="nav-mobile-cta">
-          <Link to="/partner" className="btn btn-primary">
-            Start an Inquiry
-          </Link>
+          {MAINTENANCE_MODE ? (
+            <Link to="/contact" className="btn btn-primary" onClick={() => setMenuOpen(false)}>
+              Learn More
+            </Link>
+          ) : (
+            <Link to="/partner" className="btn btn-primary">
+              Start an Inquiry
+            </Link>
+          )}
         </div>
       </div>
     </>

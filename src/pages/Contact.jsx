@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { MAINTENANCE_MODE } from '../maintenance.js'
 
 const IconFacebook = () => (
   <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
@@ -259,7 +260,16 @@ export default function Contact() {
               >
                 <h4 style={{ fontSize: '22px', marginBottom: '14px' }}>{item.title}</h4>
                 <p style={{ fontSize: '15px', lineHeight: 1.72, marginBottom: '32px' }}>{item.desc}</p>
-                {item.internal ? (
+                {MAINTENANCE_MODE ? (
+                  /* Buttons visible but unlinked during maintenance */
+                  <span
+                    className="btn btn-outline-teal"
+                    style={{ opacity: 0.4, cursor: 'default', pointerEvents: 'none' }}
+                    aria-disabled="true"
+                  >
+                    {item.cta}
+                  </span>
+                ) : item.internal ? (
                   <Link to={item.href} className="btn btn-outline-teal">
                     {item.cta}
                   </Link>

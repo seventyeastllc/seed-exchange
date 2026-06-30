@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { MAINTENANCE_MODE } from '../maintenance.js'
 
 /* ── Social media SVG icons ── */
 const IconFacebook = () => (
@@ -25,16 +26,17 @@ const IconLinkedIn = () => (
   </svg>
 )
 
-const NAV_LINKS = [
-  { to: '/', label: 'Home' },
-  { to: '/about', label: 'About TSE' },
-  { to: '/how-we-work', label: 'How We Work' },
-  { to: '/partner', label: 'Partner With Us' },
-  { to: '/community', label: 'Community' },
-  { to: '/lattice', label: 'Lattice' },
-  { to: '/roundtables', label: 'Roundtables' },
-  { to: '/partner', label: 'Start an Inquiry' },
-]
+// In maintenance mode, internal page links become non-clickable spans
+const NavItem = ({ to, children }) => {
+  if (MAINTENANCE_MODE) {
+    return (
+      <span style={{ opacity: 0.35, cursor: 'default' }} aria-disabled="true">
+        {children}
+      </span>
+    )
+  }
+  return <Link to={to}>{children}</Link>
+}
 
 export default function Footer() {
   return (
@@ -72,9 +74,15 @@ export default function Footer() {
           <div>
             <p className="footer-col-head">Navigate</p>
             <div className="footer-col-links">
-              {NAV_LINKS.map((link) => (
-                <Link key={link.to} to={link.to}>{link.label}</Link>
-              ))}
+              <NavItem to="/">Home</NavItem>
+              <NavItem to="/about">About TSE</NavItem>
+              <NavItem to="/how-we-work">How We Work</NavItem>
+              <NavItem to="/partner">Partner With Us</NavItem>
+              <NavItem to="/community">Community</NavItem>
+              <NavItem to="/lattice">Lattice</NavItem>
+              <NavItem to="/roundtables">Roundtables</NavItem>
+              {/* Contact is live during maintenance */}
+              <Link to="/contact">Contact</Link>
             </div>
           </div>
 
@@ -82,14 +90,16 @@ export default function Footer() {
           <div>
             <p className="footer-col-head">Community</p>
             <div className="footer-col-links">
+              {/* External links — always live */}
               <a href="https://www.facebook.com/share/g/17aSVDX53z/" target="_blank" rel="noopener noreferrer">
                 Community Garden ↗
               </a>
               <a href="https://www.facebook.com/share/g/1avMjhRuw8/" target="_blank" rel="noopener noreferrer">
                 The Bridge ↗
               </a>
-              <Link to="/lattice">Lattice (Fall 2026)</Link>
-              <Link to="/roundtables">The Field Table</Link>
+              {/* Internal — disabled during maintenance */}
+              <NavItem to="/lattice">Lattice (Fall 2026)</NavItem>
+              <NavItem to="/roundtables">The Field Table</NavItem>
             </div>
           </div>
 
@@ -97,8 +107,10 @@ export default function Footer() {
           <div>
             <p className="footer-col-head">Connect</p>
             <div className="footer-col-links">
-              <Link to="/partner">Partner With Us</Link>
-              <Link to="/partner">Start an Inquiry</Link>
+              {/* Internal partner links — disabled during maintenance */}
+              <NavItem to="/partner">Partner With Us</NavItem>
+              <NavItem to="/partner">Start an Inquiry</NavItem>
+              {/* External / email — always live */}
               <a href="https://www.facebook.com/profile.php?id=61578142387617" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
               <a href="https://www.instagram.com/seedxga" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
               <a href="https://substack.com/@theseedexchangega" target="_blank" rel="noopener noreferrer">Substack ↗</a>
@@ -108,7 +120,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Substack CTA */}
+        {/* Substack CTA — external, always live */}
         <div className="footer-capture">
           <h4>Field notes from inside the work.</h4>
           <p className="sub">
@@ -129,6 +141,7 @@ export default function Footer() {
           <p className="footer-copy">
             © {new Date().getFullYear()} The Seed Exchange. All rights reserved. seedxga.com
           </p>
+          {/* Social icons — always live */}
           <div className="footer-socials">
             <a href="https://www.facebook.com/profile.php?id=61578142387617" className="footer-social" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
               <IconFacebook />
